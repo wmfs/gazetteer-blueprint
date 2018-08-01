@@ -2,7 +2,8 @@
   "title": "Gazetteer",
   "description": "The Vision Gazetteer",
   "primaryKey": [
-    "uprn"
+    "uprn",
+    "counter"
   ],
   "type": "object",
   "properties": {
@@ -13,7 +14,7 @@
     },
     "originHashSum": {
       "type": "string",
-      "description": "Hash as assigned to the row in Addressbase Plus"
+      "description": "Hash sum"
     },
     "counter": {
       "type": "integer",
@@ -176,6 +177,11 @@
       "type": "integer",
       "description": "The District Id"
     },
+    "dataSource": {
+      "type": "string",
+      "maxLength": 10,
+      "description": "Where this data has come from - Ordnance Survey, legacy, etc"
+    },
     "ssi": {
       "type": "array",
       "description": "Linking of GI section to gazetteer entries",
@@ -190,6 +196,15 @@
           "notes": {
             "type": "string",
             "maxLength": 1000
+          },
+          "originHashSum": {
+            "type": "string",
+            "description": "Hash sum"
+          },
+          "dataSource": {
+            "type": "string",
+            "maxLength": 10,
+            "description": "Where this data has come from - Ordnance Survey, legacy, etc"
           }
         },
         "required": [
@@ -207,6 +222,15 @@
             "type": "string",
             "maxLength": 30,
             "description": "The name of the response classification (to match with those set-up within Vision"
+          },
+          "originHashSum": {
+            "type": "string",
+            "description": "Hash sum"
+          },
+          "dataSource": {
+            "type": "string",
+            "maxLength": 10,
+            "description": "Where this data has come from - Ordnance Survey, legacy, etc"
           }
         },
         "required": [
@@ -242,6 +266,15 @@
             "type": "string",
             "maxLength": 50,
             "description": "Trunout information for the Vision command and control system for the access point"
+          },
+          "originHashSum": {
+            "type": "string",
+            "description": "Hash sum"
+          },
+          "dataSource": {
+            "type": "string",
+            "maxLength": 10,
+            "description": "Where this data has come from - Ordnance Survey, legacy, etc"
           }
         },
         "required": [
@@ -272,6 +305,15 @@
             "type": "string",
             "maxLength": 20,
             "description": "The alarm company"
+          },
+          "originHashSum": {
+            "type": "string",
+            "description": "Hash sum"
+          },
+          "dataSource": {
+            "type": "string",
+            "maxLength": 10,
+            "description": "Where this data has come from - Ordnance Survey, legacy, etc"
           }
         },
         "required": [
@@ -296,6 +338,15 @@
             "maxLength": 9,
             "multipleOf": 0.01,
             "description": "Y grid coordinate of access point"
+          },
+          "originHashSum": {
+            "type": "string",
+            "description": "Hash sum"
+          },
+          "dataSource": {
+            "type": "string",
+            "maxLength": 10,
+            "description": "Where this data has come from - Ordnance Survey, legacy, etc"
           }
         },
         "required": [
