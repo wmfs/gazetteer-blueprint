@@ -1,0 +1,12 @@
+{
+  "namespace": "wmfs",
+  "name": "gazetteer",
+  "version": "1.0",
+
+  "label": "Gazetteer",
+  "author": "Jez Higgins",
+
+  "organisation": "West Midlands Fire Service",
+  "description": "Tymly blueprint defining the gazetteer",
+  "tags": ["gazetteer"]
+}
