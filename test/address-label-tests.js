@@ -2,7 +2,7 @@
 
 const chai = require('chai')
 const expect = chai.expect
-const getBlpuLabel = require('../../addressbox-blueprint/functions/utils/address-label')
+const getBlpuLabel = require('../functions/utils/address-label')
 
 describe('address label tests', () => {
   const tests = [

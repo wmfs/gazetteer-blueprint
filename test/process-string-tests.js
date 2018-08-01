@@ -2,7 +2,7 @@
 
 const chai = require('chai')
 const expect = chai.expect
-const processString = require('../../addressbox-blueprint/functions/utils/process-string')
+const processString = require('../functions/utils/process-string')
 
 describe('Process string tests', function () {
   it('Should process a simple string', function () {

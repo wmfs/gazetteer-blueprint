@@ -1,7 +1,7 @@
 /* eslint-env mocha */
 const chai = require('chai')
 const expect = chai.expect
-const gazetteerAddress = require('../../addressbox-blueprint/functions/utils/gazetteer-address')
+const gazetteerAddress = require('../functions/utils/gazetteer-address')
 
 describe('extract address for gazetteer', () => {
   describe('addresses', () => {

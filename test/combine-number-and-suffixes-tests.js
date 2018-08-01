@@ -4,7 +4,7 @@
 
 const chai = require('chai')
 const expect = chai.expect
-const combSuf = require('../../addressbox-blueprint/functions/utils/combine-numbers-and-suffixes')
+const combSuf = require('../functions/utils/combine-numbers-and-suffixes')
 
 describe('Combine suffixes and numbers tests', function () {
   const testlabels = [
