@@ -1,0 +1,44 @@
+{
+  "title": "Alarms",
+  "description": "Details of fire alarms at gazetteer locations",
+  "primaryKey": [
+    "uprn",
+    "code"
+  ],
+  "type": "object",
+  "properties": {
+    "uprn": {
+      "type": "integer",
+      "maxLength": 12,
+      "description": "UPRN of the property where the alarm is located"
+    },
+    "code": {
+      "type": "string",
+      "maxLength": 20,
+      "description": "The alarm code (identification code for this alarm). 2nd part of primary key"
+    },
+    "notes": {
+      "type": "string",
+      "maxLength": 100,
+      "description": "Free text information for this alarm"
+    },
+    "provider": {
+      "type": "string",
+      "maxLength": 20,
+      "description": "The alarm company"
+    },
+    "originHashSum": {
+      "type": "string",
+      "description": "Hash sum"
+    },
+    "dataSource": {
+      "type": "string",
+      "maxLength": 10,
+      "description": "Where this data has come from - Ordnance Survey, legacy, etc"
+    }
+  },
+  "required": [
+    "uprn",
+    "code"
+  ]
+}
