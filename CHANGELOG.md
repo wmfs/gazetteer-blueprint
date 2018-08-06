@@ -1,3 +1,15 @@
+# [1.2.0](https://github.com/wmfs/gazetteer-blueprint/compare/v1.1.0...v1.2.0) (2018-08-06)
+
+
+### ✨ Features
+
+* Pulled alarms table out in its own right, rather than as a child of gazetteer. ([362f2e9](https://github.com/wmfs/gazetteer-blueprint/commit/362f2e9))
+
+
+### ♻️ Chores
+
+* semantic-release 15.9.2 -> 15.9.5 ([7cbbbdb](https://github.com/wmfs/gazetteer-blueprint/commit/7cbbbdb))
+
 # [1.1.0](https://github.com/wmfs/gazetteer-blueprint/compare/v1.0.0...v1.1.0) (2018-08-01)
 
 
