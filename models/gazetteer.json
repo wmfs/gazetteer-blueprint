@@ -212,52 +212,6 @@
         ]
       }
     },
-    "locations": {
-      "type": "array",
-      "description": "Access points for gazetteer entries",
-      "items": {
-        "type": "object",
-        "properties": {
-          "name": {
-            "type": "string",
-            "maxLength": 50,
-            "description": "Name / title for this access point. 2nd part of primary key"
-          },
-          "xCoordinate": {
-            "type": "number",
-            "multipleOf": 0.01,
-            "maxLength": 8,
-            "description": "X grid coordinate of access point"
-          },
-          "yCoordinate": {
-            "type": "number",
-            "multipleOf": 0.01,
-            "maxLength": 9,
-            "description": "Y grid coordinate of access point"
-          },
-          "responseCode": {
-            "type": "string",
-            "maxLength": 50,
-            "description": "Trunout information for the Vision command and control system for the access point"
-          },
-          "originHashSum": {
-            "type": "string",
-            "description": "Hash sum"
-          },
-          "dataSource": {
-            "type": "string",
-            "maxLength": 10,
-            "description": "Where this data has come from - Ordnance Survey, legacy, etc"
-          }
-        },
-        "required": [
-          "name",
-          "XCoordinate",
-          "YCoordinate",
-          "responseCode"
-        ]
-      }
-    },
    "routing": {
       "type": "array",
       "description": "The purpose of this record is to maintain ROUTINGX and ROUTINGY values in the gazetteer table",
