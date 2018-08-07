@@ -1,3 +1,10 @@
+## [1.2.2](https://github.com/wmfs/gazetteer-blueprint/compare/v1.2.1...v1.2.2) (2018-08-07)
+
+
+### 🐛 Bug Fixes
+
+* Pulled responses table out in its own right ([a435a09](https://github.com/wmfs/gazetteer-blueprint/commit/a435a09))
+
 ## [1.2.1](https://github.com/wmfs/gazetteer-blueprint/compare/v1.2.0...v1.2.1) (2018-08-07)
 
 
