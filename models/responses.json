@@ -1,0 +1,34 @@
+{
+  "title": "Responses",
+  "description": "Contains turnout information relating to specific gazetteer entries",
+  "primaryKey": [
+    "uprn",
+    "responseCode"
+  ],
+  "type": "object",
+  "properties": {
+    "uprn": {
+      "type": "integer",
+      "maxLength": 12,
+      "description": "UPRN of the property where the alarm is located"
+    },
+    "responseCode": {
+      "type": "string",
+      "maxLength": 30,
+      "description": "The name of the response classification (to match with those set-up within Vision"
+    },
+    "originHashSum": {
+      "type": "string",
+      "description": "Hash sum"
+    },
+    "dataSource": {
+      "type": "string",
+      "maxLength": 10,
+      "description": "Where this data has come from - Ordnance Survey, legacy, etc"
+    }
+  },
+  "required": [
+    "uprn",
+    "responseCode"
+  ]
+}
