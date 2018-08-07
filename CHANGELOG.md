@@ -1,3 +1,10 @@
+## [1.2.3](https://github.com/wmfs/gazetteer-blueprint/compare/v1.2.2...v1.2.3) (2018-08-07)
+
+
+### 🐛 Bug Fixes
+
+* Pull location out into a table in its own right. ([71656a6](https://github.com/wmfs/gazetteer-blueprint/commit/71656a6))
+
 ## [1.2.2](https://github.com/wmfs/gazetteer-blueprint/compare/v1.2.1...v1.2.2) (2018-08-07)
 
 
