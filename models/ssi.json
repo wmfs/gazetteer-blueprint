@@ -1,0 +1,39 @@
+{
+  "title": "SSI",
+  "description": "Site specific information for gazetteer locations",
+  "primaryKey": [
+    "uprn",
+    "ssiKey"
+  ],
+  "type": "object",
+  "properties": {
+    "uprn": {
+      "type": "integer",
+      "maxLength": 12,
+      "description": "UPRN of the property where the alarm is located"
+    },
+    "ssiKey": {
+      "type": "integer",
+      "maxLength": 12,
+      "description": "A key that identifies a specific piece of SSI"
+    },
+    "notes": {
+      "type": "string",
+      "maxLength": 1000
+    },
+    "originHashSum": {
+      "type": "string",
+      "description": "Hash sum"
+    },
+    "dataSource": {
+      "type": "string",
+      "maxLength": 10,
+      "description": "Where this data has come from - Ordnance Survey, legacy, etc"
+    }
+  },
+  "required": [
+    "uprn",
+    "ssiKey",
+    "notes"
+  ]
+}
