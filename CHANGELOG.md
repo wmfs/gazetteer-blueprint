@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/wmfs/gazetteer-blueprint/compare/v1.2.3...v1.3.0) (2018-08-08)
+
+
+### ✨ Features
+
+* Split SSI table out in its own right. ([94efe56](https://github.com/wmfs/gazetteer-blueprint/commit/94efe56))
+
 ## [1.2.3](https://github.com/wmfs/gazetteer-blueprint/compare/v1.2.2...v1.2.3) (2018-08-07)
 
 
