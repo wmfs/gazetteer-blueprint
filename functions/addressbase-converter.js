@@ -33,7 +33,8 @@ function addressbasePremiumToGazetteer (ctx) {
       voaNdrScatCode: sourceRow.voaNdrScatCode,
       addressLabel: label,
       addressDescription: sourceRow.uprn,
-      wardCode: sourceRow.wardCode
+      wardCode: sourceRow.wardCode,
+      dataSource: 'OrdnanceSurvey'
     }
 
     callback(null, output)

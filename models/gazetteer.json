@@ -181,40 +181,6 @@
       "type": "string",
       "maxLength": 10,
       "description": "Where this data has come from - Ordnance Survey, legacy, etc"
-    },
-    "routing": {
-      "type": "array",
-      "description": "The purpose of this record is to maintain ROUTINGX and ROUTINGY values in the gazetteer table",
-      "items": {
-        "type": "object",
-        "properties": {
-          "xCoordinate": {
-            "type": "number",
-            "maxLength": 8,
-            "multipleOf": 0.01,
-            "description": "X grid coordinate of access point"
-          },
-          "yCoordinate": {
-            "type": "number",
-            "maxLength": 9,
-            "multipleOf": 0.01,
-            "description": "Y grid coordinate of access point"
-          },
-          "originHashSum": {
-            "type": "string",
-            "description": "Hash sum"
-          },
-          "dataSource": {
-            "type": "string",
-            "maxLength": 10,
-            "description": "Where this data has come from - Ordnance Survey, legacy, etc"
-          }
-        },
-        "required": [
-          "XCoordinate",
-          "YCoordinate"
-        ]
-      }
     }
   },
   "indexes": [

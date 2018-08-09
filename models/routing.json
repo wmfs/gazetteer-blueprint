@@ -1,0 +1,37 @@
+{
+  "title": "Routing",
+  "description": "The purpose of this record is to maintain ROUTINGX and ROUTINGY values in the gazetteer table",
+  "primaryKey": [
+    "xCoordinate",
+    "yCoordinate"
+  ],
+  "type": "object",
+  "properties": {
+    "uprn": {
+      "type": "integer",
+      "maxLength": 12,
+      "description": "UPRN of the property where the alarm is located"
+    },
+    "xCoordinate": {
+      "type": "number",
+      "maxLength": 8,
+      "multipleOf": 0.01,
+      "description": "X grid coordinate of access point"
+    },
+    "yCoordinate": {
+      "type": "number",
+      "maxLength": 9,
+      "multipleOf": 0.01,
+      "description": "Y grid coordinate of access point"
+    },
+    "originHashSum": {
+      "type": "string",
+      "description": "Hash sum"
+    },
+    "dataSource": {
+      "type": "string",
+      "maxLength": 10,
+      "description": "Where this data has come from - Ordnance Survey, legacy, etc"
+    }
+  }
+}
