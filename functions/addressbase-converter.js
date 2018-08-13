@@ -29,6 +29,7 @@ function addressbasePremiumToGazetteer (ctx) {
       areaName2: address.areaName2,
       postTown: address.postTown,
       postcode: address.postCode,
+      postCounty: address.administrativeArea,
       voaNdrpDescCode: sourceRow.voaNdrpDescCode,
       voaNdrScatCode: sourceRow.voaNdrScatCode,
       addressLabel: label,
