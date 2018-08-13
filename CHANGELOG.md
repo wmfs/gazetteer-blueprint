@@ -1,3 +1,10 @@
+## [1.4.2](https://github.com/wmfs/gazetteer-blueprint/compare/v1.4.1...v1.4.2) (2018-08-13)
+
+
+### 🐛 Bug Fixes
+
+* Map administrative_area onto post_county ([4c712dd](https://github.com/wmfs/gazetteer-blueprint/commit/4c712dd))
+
 ## [1.4.1](https://github.com/wmfs/gazetteer-blueprint/compare/v1.4.0...v1.4.1) (2018-08-13)
 
 
