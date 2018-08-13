@@ -1,3 +1,15 @@
+## [1.4.1](https://github.com/wmfs/gazetteer-blueprint/compare/v1.4.0...v1.4.1) (2018-08-13)
+
+
+### 🐛 Bug Fixes
+
+* Correct (I hope) street name 2 ([ae8455b](https://github.com/wmfs/gazetteer-blueprint/commit/ae8455b))
+
+
+### 💎 Styles
+
+* Lint fix ([2e8320e](https://github.com/wmfs/gazetteer-blueprint/commit/2e8320e))
+
 # [1.4.0](https://github.com/wmfs/gazetteer-blueprint/compare/v1.3.0...v1.4.0) (2018-08-09)
 
 
