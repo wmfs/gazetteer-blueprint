@@ -89,7 +89,7 @@ function streetName2 (addressbase) {
     return !tMatch ? thoroughfare : null
   }
 
-  return thoroughfare ? thoroughfare : addressbase.streetDescription
+  return thoroughfare || addressbase.streetDescription
 } // streetName2
 
 function areaName1 (addressbase) {
