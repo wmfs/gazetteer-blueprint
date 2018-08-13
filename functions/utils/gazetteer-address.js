@@ -69,7 +69,7 @@ function saoText (addressbase) {
 } // saoText
 
 function businessName (addressbase) {
-  return addressbase.rmOrganisationName || addressbase.laOrganisation || addressbase.legalName
+  return addressbase.rmOrganisationName || addressbase.laOrganisation || addressbase.legalName || null
 } // businessName
 
 function streetName1 (addressbase) {
@@ -77,7 +77,19 @@ function streetName1 (addressbase) {
 } // streetName1
 
 function streetName2 (addressbase) {
-  return addressbase.dependentThoroughfare ? addressbase.streetDescription : null
+  const thoroughfare = addressbase.thoroughfare || null
+  const dtMatch = (addressbase.dependentThoroughfare === addressbase.streetDescription)
+  const tMatch = (!!thoroughfare && (thoroughfare === addressbase.streetDescription))
+
+  if (!addressbase.dependentThoroughfare) {
+    return !tMatch ? thoroughfare : null
+  }
+
+  if (dtMatch) {
+    return !tMatch ? thoroughfare : null
+  }
+
+  return thoroughfare ? thoroughfare : addressbase.streetDescription
 } // streetName2
 
 function areaName1 (addressbase) {

@@ -334,6 +334,33 @@ describe('extract address for gazetteer', () => {
           postTown: 'BIRMINGHAM',
           postCode: 'B1 1AY'
         }
+      ],
+      [
+        'Dependent thoroughfare matches street description',
+        {
+          buildingNumber: 1,
+          buildingName: null,
+          dependentThoroughfare: 'LOCK KEEPERS REACH',
+          thoroughfare: 'WITHYBED LANE',
+          doubleDependentLocality: 'WITHYBED GREEN',
+          dependentLocality: 'ALVECHURCH',
+          postTown: 'BIRMINGHAM',
+          postcode: 'B48 7RF',
+          streetDescription: 'LOCK KEEPERS REACH',
+          townName: 'ALVECHURCH',
+          administrativeArea: 'WORCESTERSHIRE'
+        },
+        {
+          businessName: null,
+          buildingName: null,
+          buildingNumber: 1,
+          streetName1: 'LOCK KEEPERS REACH',
+          streetName2: 'WITHYBED LANE',
+          areaName1: 'WITHYBED GREEN',
+          areaName2: 'ALVECHURCH',
+          postTown: 'BIRMINGHAM',
+          postCode: 'B48 7RF'
+        }
       ]
     ]
 
