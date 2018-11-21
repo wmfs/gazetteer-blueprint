@@ -103,7 +103,7 @@ function areaName2 (addressbase) {
 } // areaName2
 
 function postCode (addressbase) {
-  return addressbase.postcode
+  return addressbase.postcode || addressbase.postcodeLocator || null
 } // postCode
 
 function postTown (addressbase) {
