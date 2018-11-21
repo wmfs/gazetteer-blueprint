@@ -1,3 +1,62 @@
+## [1.6.1](https://github.com/wmfs/gazetteer-blueprint/compare/v1.6.0...v1.6.1) (2018-11-21)
+
+
+### 🐛 Bug Fixes
+
+* Use postcode_locator as postcode if the actual postcode field is empty. ([0531cf2](https://github.com/wmfs/gazetteer-blueprint/commit/0531cf2))
+
+
+### 🛠 Builds
+
+* **deps-dev:** update [@semantic-release](https://github.com/semantic-release)/changelog requirement ([ea64a8f](https://github.com/wmfs/gazetteer-blueprint/commit/ea64a8f))
+* **deps-dev:** update [@semantic-release](https://github.com/semantic-release)/git requirement ([5383003](https://github.com/wmfs/gazetteer-blueprint/commit/5383003))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly requirement from 1.42.0 to 1.47.0 ([4ed04ce](https://github.com/wmfs/gazetteer-blueprint/commit/4ed04ce))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly requirement from 1.47.0 to 1.48.0 ([eb39bc8](https://github.com/wmfs/gazetteer-blueprint/commit/eb39bc8))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly requirement from 1.48.0 to 1.49.0 ([2a1d0f6](https://github.com/wmfs/gazetteer-blueprint/commit/2a1d0f6))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly requirement from 1.49.0 to 1.50.0 ([0af3c55](https://github.com/wmfs/gazetteer-blueprint/commit/0af3c55))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly requirement from 1.50.0 to 1.54.0 ([e2ddaef](https://github.com/wmfs/gazetteer-blueprint/commit/e2ddaef))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly requirement from 1.54.0 to 1.56.0 ([53222c1](https://github.com/wmfs/gazetteer-blueprint/commit/53222c1))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly requirement from 1.56.0 to 1.58.0 ([2ed7543](https://github.com/wmfs/gazetteer-blueprint/commit/2ed7543))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly requirement from 1.58.0 to 1.59.0 ([55ee6ed](https://github.com/wmfs/gazetteer-blueprint/commit/55ee6ed))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly requirement from 1.59.0 to 1.60.0 ([4777458](https://github.com/wmfs/gazetteer-blueprint/commit/4777458))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly requirement from 1.60.0 to 1.61.0 ([ccead9a](https://github.com/wmfs/gazetteer-blueprint/commit/ccead9a))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly requirement from 1.61.0 to 1.62.0 ([8f04d58](https://github.com/wmfs/gazetteer-blueprint/commit/8f04d58))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly requirement from 1.62.0 to 1.63.0 ([dc03097](https://github.com/wmfs/gazetteer-blueprint/commit/dc03097))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly-etl-plugin requirement ([086ad14](https://github.com/wmfs/gazetteer-blueprint/commit/086ad14))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly-etl-plugin requirement ([2b9840c](https://github.com/wmfs/gazetteer-blueprint/commit/2b9840c))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly-etl-plugin requirement ([3c6b9d7](https://github.com/wmfs/gazetteer-blueprint/commit/3c6b9d7))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly-etl-plugin requirement ([3e70f17](https://github.com/wmfs/gazetteer-blueprint/commit/3e70f17))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly-etl-plugin requirement ([43cc686](https://github.com/wmfs/gazetteer-blueprint/commit/43cc686))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly-etl-plugin requirement ([acbad4a](https://github.com/wmfs/gazetteer-blueprint/commit/acbad4a))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly-etl-plugin requirement ([3b772f5](https://github.com/wmfs/gazetteer-blueprint/commit/3b772f5))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly-etl-plugin requirement ([8a78994](https://github.com/wmfs/gazetteer-blueprint/commit/8a78994))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly-etl-plugin requirement ([4a05c62](https://github.com/wmfs/gazetteer-blueprint/commit/4a05c62))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly-etl-plugin requirement ([53fa529](https://github.com/wmfs/gazetteer-blueprint/commit/53fa529))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly-etl-plugin requirement ([dff4bba](https://github.com/wmfs/gazetteer-blueprint/commit/dff4bba))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly-etl-plugin requirement ([08eb65d](https://github.com/wmfs/gazetteer-blueprint/commit/08eb65d))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly-etl-plugin requirement ([169c868](https://github.com/wmfs/gazetteer-blueprint/commit/169c868))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly-pg-plugin requirement ([4fa5672](https://github.com/wmfs/gazetteer-blueprint/commit/4fa5672))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly-pg-plugin requirement ([ae0ad3c](https://github.com/wmfs/gazetteer-blueprint/commit/ae0ad3c))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly-pg-plugin requirement ([b90d018](https://github.com/wmfs/gazetteer-blueprint/commit/b90d018))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly-pg-plugin requirement ([a81ad68](https://github.com/wmfs/gazetteer-blueprint/commit/a81ad68))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly-pg-plugin requirement ([78984c4](https://github.com/wmfs/gazetteer-blueprint/commit/78984c4))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly-pg-plugin requirement ([83011bb](https://github.com/wmfs/gazetteer-blueprint/commit/83011bb))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly-pg-plugin requirement ([8e2478c](https://github.com/wmfs/gazetteer-blueprint/commit/8e2478c))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly-pg-plugin requirement ([14d2482](https://github.com/wmfs/gazetteer-blueprint/commit/14d2482))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly-pg-plugin requirement ([ea162ca](https://github.com/wmfs/gazetteer-blueprint/commit/ea162ca))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly-pg-plugin requirement ([12f413d](https://github.com/wmfs/gazetteer-blueprint/commit/12f413d))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly-pg-plugin requirement ([f8035a3](https://github.com/wmfs/gazetteer-blueprint/commit/f8035a3))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly-pg-plugin requirement ([dee05c4](https://github.com/wmfs/gazetteer-blueprint/commit/dee05c4))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly-test-helpers requirement ([cb8689b](https://github.com/wmfs/gazetteer-blueprint/commit/cb8689b))
+* **deps-dev:** update nyc requirement from 13.0.1 to 13.1.0 ([4fd4a28](https://github.com/wmfs/gazetteer-blueprint/commit/4fd4a28))
+* **deps-dev:** update semantic-release requirement ([e534d27](https://github.com/wmfs/gazetteer-blueprint/commit/e534d27))
+* **deps-dev:** update semantic-release requirement ([eb3c162](https://github.com/wmfs/gazetteer-blueprint/commit/eb3c162))
+* **deps-dev:** update semantic-release requirement ([401530f](https://github.com/wmfs/gazetteer-blueprint/commit/401530f))
+* **deps-dev:** update semantic-release requirement ([9066303](https://github.com/wmfs/gazetteer-blueprint/commit/9066303))
+* **deps-dev:** update semantic-release requirement ([a54f206](https://github.com/wmfs/gazetteer-blueprint/commit/a54f206))
+* **deps-dev:** update semantic-release requirement ([81d8a3f](https://github.com/wmfs/gazetteer-blueprint/commit/81d8a3f))
+* **deps-dev:** update semantic-release requirement ([77fb65c](https://github.com/wmfs/gazetteer-blueprint/commit/77fb65c))
+
 # [1.6.0](https://github.com/wmfs/gazetteer-blueprint/compare/v1.5.0...v1.6.0) (2018-10-11)
 
 
