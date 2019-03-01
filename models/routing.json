@@ -8,29 +8,39 @@
   "type": "object",
   "properties": {
     "uprn": {
+      "typeHint": "uprn",
       "type": "integer",
       "maxLength": 12,
-      "description": "UPRN of the property where the alarm is located"
+      "title": "UPRN",
+      "description": "UPRN of the property the route serves"
     },
     "xCoordinate": {
+      "typeHint": "osNatGrid",
       "type": "number",
       "maxLength": 8,
       "multipleOf": 0.01,
+      "title": "X",
       "description": "X grid coordinate of access point"
     },
     "yCoordinate": {
+      "typeHint": "osNatGrid",
       "type": "number",
-      "maxLength": 9,
+      "maxLength": 8,
       "multipleOf": 0.01,
+      "title": "Y",
       "description": "Y grid coordinate of access point"
     },
     "originHashSum": {
+      "typeHint": "text",
       "type": "string",
-      "description": "Hash sum"
+      "title": "Hash sum",
+      "description": "Hash representing column data"
     },
     "dataSource": {
+      "typeHint": "text",
       "type": "string",
       "maxLength": 10,
+      "title": "Data Source",
       "description": "Where this data has come from - Ordnance Survey, legacy, etc"
     }
   }

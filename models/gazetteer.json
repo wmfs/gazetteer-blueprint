@@ -8,178 +8,256 @@
   "type": "object",
   "properties": {
     "uprn": {
+      "typeHint": "uprn",
       "type": "integer",
       "maxLength": 12,
+      "title": "UPRN",
       "description": "A gazetteer URN"
     },
     "originHashSum": {
+      "typeHint": "text",
       "type": "string",
-      "description": "Hash sum"
+      "title": "Hash sum",
+      "description": "Hash representing column data"
     },
     "counter": {
+      "typeHint": "integer",
       "type": "integer",
       "minLength": 1,
       "description": "A generated sequence number which is combined with the URN to identify the address (Minimum=1)"
     },
     "class": {
+      "typeHint": "text",
       "type": "string",
       "maxLength": 6,
+      "title": "Classification",
       "description": "Classification of the address record. Source: Contributing Local Authority"
     },
     "parentUprn": {
+      "typeHint": "uprn",
       "type": "integer",
       "maxLength": 12,
+      "title": "Parent UPRN",
       "description": "UPRN of the parent record if a parent child relationship exists. Source: Contributing Local Authority"
     },
     "usrn": {
+      "typeHint": "usrn",
       "type": "integer",
+      "maxLength": 8,
+      "title": "USRN",
       "description": "Unique Street Reference Number. Source: Contributing Local Authority"
     },
     "state": {
+      "typeHint": "text",
       "type": "string",
+      "title": "Building State",
       "description": "A code identifying the current state of the property. Source: Contributing Local Authority"
     },
     "localCustodianCode": {
+      "typeHint": "integer",
       "type": "integer",
+      "title": "LLPG Custodian",
       "description": "Unique identifier of the LLPG Custodian"
     },
     "officialFlag": {
+      "typeHint": "text",
       "type": "string",
+      "title": "Address Status",
       "description": "Status of the address. Source: Contributing Local Authority"
     },
     "addressLabel": {
+      "typeHint": "address",
       "type": "string",
       "maxLength": 500,
+      "title": "Address",
       "description": "An address label assembles from various elements"
     },
     "addressDescription": {
+      "typeHint": "text",
       "type": "string",
+      "title": "Address Description",
       "description": "An address description"
     },
     "businessName": {
+      "typeHint": "text",
       "type": "string",
       "maxLength": 60,
+      "title": "Business Name",
       "description": "Stores the Business Name of the address if applicable"
     },
     "buildingName": {
+      "typeHint": "text",
       "type": "string",
       "maxLength": 60,
+      "title": "Building Name",
       "description": "Stores the name of a building if applicable"
     },
     "buildingNumber": {
+      "typeHint": "text",
       "type": "string",
       "maxLength": 15,
+      "title": "Building Number",
       "description": "Stores the number of a building if applicable"
     },
     "streetName1": {
+      "typeHint": "text",
       "type": "string",
       "maxLength": 60,
+      "title": "Street",
       "description": "The first Street name of the property"
     },
     "streetName2": {
+      "typeHint": "text",
       "type": "string",
       "maxLength": 60,
+      "title": "Street 2",
       "description": "The second Street name of the property, if any"
     },
     "areaName1": {
+      "typeHint": "text",
       "type": "string",
       "maxLength": 40,
+      "title": "Town",
       "description": "The local area (e.g. Town, Suburb)"
     },
     "areaName2": {
+      "typeHint": "text",
       "type": "string",
       "maxLength": 40,
+      "title": "County",
       "description": "The main area (e.g. County, State)"
     },
     "postcode": {
+      "typeHint": "postcode",
       "type": "string",
       "maxLength": 10,
-      "description": "The Postcode"
+      "title": "Post Code",
+      "description": "Address Postcode"
     },
     "postTown": {
+      "typeHint": "text",
       "type": "string",
       "maxLength": 30,
+      "title": "Post Town",
       "description": "The Post Town"
     },
     "postCounty": {
+      "typeHint": "text",
       "type": "string",
       "maxLength": 30,
+      "title": "Post County",
       "description": "The Post County"
     },
     "longitude": {
+      "typeHint": "latLong",
       "type": "number",
+      "maxLength": 8,
+      "multipleOf": 0.00000001,
+      "title": "Longitude",
       "description": "A value defining the Longitude in accordance with the ETRS89 coordinate reference system. Source: Ordnance Survey"
     },
     "latitude": {
+      "typeHint": "latLong",
       "type": "number",
+      "maxLength": 8,
+      "multipleOf": 0.00000001,
+      "title": "Latitude",
       "description": "A value defining the Latitude in accordance with the ETRS89 coordinate reference system. Source: Ordnance Survey"
     },
     "actualX": {
+      "typeHint": "osNatGrid",
       "type": "number",
       "maxLength": 8,
       "multipleOf": 0.01,
+      "title": "X",
       "description": "The X grid co-ordinate (Easting)"
     },
     "actualY": {
+      "typeHint": "osNatGrid",
       "type": "number",
-      "maxLength": 9,
+      "maxLength": 8,
       "multipleOf": 0.01,
+      "title": "Y",
       "description": "The Y grid co-ordinate (Northing)"
     },
     "routingX": {
+      "typeHint": "osNatGrid",
       "type": "number",
-      "multipleOf": 0.01,
       "maxLength": 8,
+      "multipleOf": 0.01,
+      "title": "Routing X",
       "description": "The Easting co-ordinate of an access-point for the address"
     },
     "routingY": {
+      "typeHint": "osNatGrid",
       "type": "number",
+      "maxLength": 8,
       "multipleOf": 0.01,
-      "maxLength": 9,
+      "title": "Routing Y",
       "description": "The Northing co-ordinate of an access-point for the address"
     },
     "mapbookRef": {
+      "typeHint": "text",
       "type": "string",
       "maxLength": 15,
+      "title": "Map book ref",
       "description": "Map book reference of premise"
     },
     "lpiKey": {
+      "typeHint": "text",
       "type": "string",
       "maxLength": 14,
+      "title": "LPI Key",
       "description": "NLPG Land and Property Identifier key"
     },
     "lsoaCode2011": {
+      "typeHint": "text",
       "type": "string",
+      "title": "LSOA Code",
       "description": "LSOA Code 2011"
     },
     "voaNdrpDescCode": {
+      "typeHint": "text",
       "type": "string",
+      "title": "VOA NDRP Desc Code",
       "description": "VOA NDRP Desc Code"
     },
     "voaNdrScatCode": {
+      "typeHint": "text",
       "type": "string",
+      "title": "VOA NDR Scat Code",
       "description": "VOA NDR Scat Code"
     },
     "wardCode": {
+      "typeHint": "text",
       "type": "string",
       "maxLength": 9,
+      "title": "Ward Code",
       "description": "ONS GSS code of the electoral ward (Eng and Scot) or the electoral division (Wales) name in which the property is situated"
     },
     "commandAreaId": {
+      "typeHint": "integer",
       "type": "integer",
+      "title": "Command Area Id",
       "description": "The Command Area Id"
     },
     "boroughId": {
+      "typeHint": "integer",
       "type": "integer",
+      "title": "Borough Id",
       "description": "The Borough Id"
     },
     "districtId": {
+      "typeHint": "integer",
       "type": "integer",
+      "title": "District Id",
       "description": "The District Id"
     },
     "dataSource": {
+      "typeHint": "text",
       "type": "string",
       "maxLength": 10,
+      "title": "Data Source",
       "description": "Where this data has come from - Ordnance Survey, legacy, etc"
     }
   },

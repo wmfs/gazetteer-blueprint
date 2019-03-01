@@ -8,26 +8,36 @@
   "type": "object",
   "properties": {
     "uprn": {
+      "typeHint": "uprn",
       "type": "integer",
       "maxLength": 12,
-      "description": "UPRN of the property where the alarm is located"
+      "title": "UPRN",
+      "description": "UPRN of the property the SSI refers to"
     },
     "ssiKey": {
+      "typeHint": "integer",
       "type": "integer",
       "maxLength": 12,
+      "title": "SSI Key",
       "description": "A key that identifies a specific piece of SSI"
     },
     "notes": {
+      "typeHint": "notes",
       "type": "string",
-      "maxLength": 1000
+      "maxLength": 1000,
+      "title": "Notes"
     },
     "originHashSum": {
+      "typeHint": "text",
       "type": "string",
-      "description": "Hash sum"
+      "title": "Hash sum",
+      "description": "Hash representing column data"
     },
     "dataSource": {
+      "typeHint": "text",
       "type": "string",
       "maxLength": 10,
+      "title": "Data Source",
       "description": "Where this data has come from - Ordnance Survey, legacy, etc"
     }
   },
