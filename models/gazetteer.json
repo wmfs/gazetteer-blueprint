@@ -75,8 +75,8 @@
     "addressDescription": {
       "typeHint": "text",
       "type": "string",
-      "title": "Address Description",
-      "description": "An address description"
+      "title": "UPRN again",
+      "description": ""
     },
     "businessName": {
       "typeHint": "text",
@@ -117,22 +117,15 @@
       "typeHint": "text",
       "type": "string",
       "maxLength": 40,
-      "title": "Town",
+      "title": "Area Name",
       "description": "The local area (e.g. Town, Suburb)"
     },
     "areaName2": {
       "typeHint": "text",
       "type": "string",
       "maxLength": 40,
-      "title": "County",
+      "title": "Area Name 2",
       "description": "The main area (e.g. County, State)"
-    },
-    "postcode": {
-      "typeHint": "postcode",
-      "type": "string",
-      "maxLength": 10,
-      "title": "Post Code",
-      "description": "Address Postcode"
     },
     "postTown": {
       "typeHint": "text",
@@ -147,6 +140,13 @@
       "maxLength": 30,
       "title": "Post County",
       "description": "The Post County"
+    },
+    "postcode": {
+      "typeHint": "postcode",
+      "type": "string",
+      "maxLength": 10,
+      "title": "Post Code",
+      "description": "Address Postcode"
     },
     "longitude": {
       "typeHint": "latLong",
