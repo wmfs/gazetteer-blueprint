@@ -1,3 +1,37 @@
+## [1.6.2](https://github.com/wmfs/gazetteer-blueprint/compare/v1.6.1...v1.6.2) (2019-03-04)
+
+
+### 🐛 Bug Fixes
+
+* trigger release ([b6ad574](https://github.com/wmfs/gazetteer-blueprint/commit/b6ad574))
+
+
+### 🛠 Builds
+
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly requirement from 1.63.0 to 1.64.0 ([45c8628](https://github.com/wmfs/gazetteer-blueprint/commit/45c8628))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly requirement from 1.64.0 to 1.66.0 ([0207ab3](https://github.com/wmfs/gazetteer-blueprint/commit/0207ab3))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly-etl-plugin requirement ([4bef1af](https://github.com/wmfs/gazetteer-blueprint/commit/4bef1af))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly-etl-plugin requirement ([f0274f3](https://github.com/wmfs/gazetteer-blueprint/commit/f0274f3))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly-etl-plugin requirement ([56df2c9](https://github.com/wmfs/gazetteer-blueprint/commit/56df2c9))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly-pg-plugin requirement ([7e1071d](https://github.com/wmfs/gazetteer-blueprint/commit/7e1071d))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly-pg-plugin requirement ([c5e5e1a](https://github.com/wmfs/gazetteer-blueprint/commit/c5e5e1a))
+* **deps-dev:** update semantic-release requirement ([185122e](https://github.com/wmfs/gazetteer-blueprint/commit/185122e))
+* **deps-dev:** update semantic-release requirement ([845cc97](https://github.com/wmfs/gazetteer-blueprint/commit/845cc97))
+* **deps-dev:** Update semantic-release requirement ([#140](https://github.com/wmfs/gazetteer-blueprint/issues/140)) ([1b959c7](https://github.com/wmfs/gazetteer-blueprint/commit/1b959c7))
+
+
+### 📦 Code Refactoring
+
+* **models:** Add type hints and titles annotations to the models ([c9d8791](https://github.com/wmfs/gazetteer-blueprint/commit/c9d8791))
+
+
+### ⚙️ Continuous Integrations
+
+* **circle:** add circle CI config ([0109382](https://github.com/wmfs/gazetteer-blueprint/commit/0109382))
+* **travis:** build on master only ([c8a956c](https://github.com/wmfs/gazetteer-blueprint/commit/c8a956c))
+* **travis:** update notification config ([05b9b42](https://github.com/wmfs/gazetteer-blueprint/commit/05b9b42))
+* **travis:** use node lts ([c5c5def](https://github.com/wmfs/gazetteer-blueprint/commit/c5c5def))
+
 ## [1.6.1](https://github.com/wmfs/gazetteer-blueprint/compare/v1.6.0...v1.6.1) (2018-11-21)
 
 
