@@ -18,7 +18,8 @@
       "typeHint": "text",
       "type": "string",
       "title": "Hash sum",
-      "description": "Hash representing column data"
+      "description": "Hash representing column data",
+      "audit": "raw"
     },
     "counter": {
       "typeHint": "integer",
@@ -70,7 +71,8 @@
       "type": "string",
       "maxLength": 500,
       "title": "Address",
-      "description": "An address label assembles from various elements"
+      "description": "An address label assembles from various elements",
+      "audit": "raw"
     },
     "addressDescription": {
       "typeHint": "text",
