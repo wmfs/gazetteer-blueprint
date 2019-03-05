@@ -12,7 +12,7 @@ function addressLabel (gazetteerAddress) {
   ]
     .filter(line => line)
     .map(line => processString(line))
-  
+
   if (gazetteerAddress.postCode) {
     lines.push(gazetteerAddress.postCode)
   }
@@ -20,7 +20,9 @@ function addressLabel (gazetteerAddress) {
     lines.push(gazetteerAddress.postcode)
   }
 
-  return lines.join(', ')
+  return lines
+    .map(l => l.trim())
+    .join(', ')
 } // addressLabel
 
 function numberAndStreet (ga) {
