@@ -1,3 +1,16 @@
+# [1.7.0](https://github.com/wmfs/gazetteer-blueprint/compare/v1.6.2...v1.7.0) (2019-03-05)
+
+
+### ✨ Features
+
+* **functions:** add-address-label function, to build address label and add to event ([8c7703f](https://github.com/wmfs/gazetteer-blueprint/commit/8c7703f))
+
+
+### 🐛 Bug Fixes
+
+* **gazetteer-model:** Tweaked titles and descriptions ([4a2f51d](https://github.com/wmfs/gazetteer-blueprint/commit/4a2f51d))
+* **streets:** Annotation tweak ([768e9bf](https://github.com/wmfs/gazetteer-blueprint/commit/768e9bf))
+
 ## [1.6.2](https://github.com/wmfs/gazetteer-blueprint/compare/v1.6.1...v1.6.2) (2019-03-04)
 
 
