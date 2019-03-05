@@ -1,3 +1,11 @@
+## [1.7.1](https://github.com/wmfs/gazetteer-blueprint/compare/v1.7.0...v1.7.1) (2019-03-05)
+
+
+### 🐛 Bug Fixes
+
+* **add-address-label:** postcode/postCode, we'll handle either now ([8e963c8](https://github.com/wmfs/gazetteer-blueprint/commit/8e963c8))
+* **address-label:** Trim strings before concatenating ([57382f0](https://github.com/wmfs/gazetteer-blueprint/commit/57382f0))
+
 # [1.7.0](https://github.com/wmfs/gazetteer-blueprint/compare/v1.6.2...v1.7.0) (2019-03-05)
 
 
