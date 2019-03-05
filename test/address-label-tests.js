@@ -10,7 +10,7 @@ describe('address label tests', () => {
       'straightforward address',
       {
         businessName: 'organisation',
-        buildingName: 'hello you! 1A-2B',
+        buildingName: 'hello you!',
         buildingNumber: '121',
         streetName1: 'ALPHINGTON ROAD',
         streetName2: null,
@@ -19,7 +19,7 @@ describe('address label tests', () => {
         postTown: 'EXETER',
         postCode: 'EX2 8JD'
       },
-      'Organisation, Hello You! 1A-2B, 121 Alphington Road, Exeter, EX2 8JD'
+      'Organisation, Hello You!, 121 Alphington Road, Exeter, EX2 8JD'
     ],
     [
       'area name 1',

@@ -5,11 +5,22 @@ function processString (inputString) {
     return null
   }
 
+  if (isMixedCase(inputString)) {
+    return inputString
+  }
+
   return inputString
     .split(' ')
     .map(initCaps)
     .join(' ')
 } // processString
+
+function isMixedCase (str) {
+  const u = str.toUpperCase()
+  const l = str.toLowerCase()
+
+  return (str !== u) && (str !== l)
+} // isMixedCase
 
 function initCaps (str) {
   if (startsWithNumber(str)) { return str }
