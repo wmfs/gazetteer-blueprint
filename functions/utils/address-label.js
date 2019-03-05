@@ -12,9 +12,12 @@ function addressLabel (gazetteerAddress) {
   ]
     .filter(line => line)
     .map(line => processString(line))
-
+  
   if (gazetteerAddress.postCode) {
     lines.push(gazetteerAddress.postCode)
+  }
+  if (gazetteerAddress.postcode) {
+    lines.push(gazetteerAddress.postcode)
   }
 
   return lines.join(', ')
