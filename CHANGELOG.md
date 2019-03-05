@@ -1,3 +1,10 @@
+## [1.7.2](https://github.com/wmfs/gazetteer-blueprint/compare/v1.7.1...v1.7.2) (2019-03-05)
+
+
+### 🐛 Bug Fixes
+
+* **gazetteer-model:** Add a couple of audit raw annotations ([0c2cc4d](https://github.com/wmfs/gazetteer-blueprint/commit/0c2cc4d))
+
 ## [1.7.1](https://github.com/wmfs/gazetteer-blueprint/compare/v1.7.0...v1.7.1) (2019-03-05)
 
 
