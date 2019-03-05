@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "streets",
+  "title": "Streets",
   "description": "WMFS Street Gazetteer",
   "primaryKey": [
     "usrn"
@@ -31,7 +31,7 @@
       "typeHint": "text",
       "type": "string",
       "maxLength": 100,
-      "title": "Description",
+      "title": "Street Name or Description",
       "description": "Name taken from the Local Land and Property Gazetteer (LLPG) street name"
     },
     "locality": {
