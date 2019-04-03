@@ -21,8 +21,8 @@
       "description": "Hash representing column data"
     },
     "state": {
-      "typeHint": "text",
-      "type": "string",
+      "typeHint": "integer",
+      "type": "integer",
       "maxLength": 1,
       "title": "Street State",
       "description": "A code indentifying the current state of the street, eg 'open'"
