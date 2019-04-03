@@ -1,3 +1,11 @@
+## [1.7.3](https://github.com/wmfs/gazetteer-blueprint/compare/v1.7.2...v1.7.3) (2019-04-03)
+
+
+### 🐛 Bug Fixes
+
+* Alter Street State type from string to integer ([e5c04e2](https://github.com/wmfs/gazetteer-blueprint/commit/e5c04e2))
+* Fix Provider label ([136317d](https://github.com/wmfs/gazetteer-blueprint/commit/136317d))
+
 ## [1.7.2](https://github.com/wmfs/gazetteer-blueprint/compare/v1.7.1...v1.7.2) (2019-03-05)
 
 
