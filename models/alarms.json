@@ -32,7 +32,7 @@
       "typeHint": "text",
       "type": "string",
       "maxLength": 20,
-      "title": "Provider2",
+      "title": "Provider",
       "description": "The alarm company"
     },
     "originHashSum": {
