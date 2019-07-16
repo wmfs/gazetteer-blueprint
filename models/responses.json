@@ -2,8 +2,7 @@
   "title": "Responses",
   "description": "Contains turnout information relating to specific gazetteer entries",
   "primaryKey": [
-    "uprn",
-    "responseCode"
+    "uprn"
   ],
   "type": "object",
   "properties": {
