@@ -1,3 +1,34 @@
+# [1.8.0](https://github.com/wmfs/gazetteer-blueprint/compare/v1.7.3...v1.8.0) (2019-07-16)
+
+
+### ✨ Features
+
+* property/streets can only have one response so change the primary key to uprn only ([af1e3a3](https://github.com/wmfs/gazetteer-blueprint/commit/af1e3a3))
+
+
+### 🛠 Builds
+
+* **deps-dev:** Update [@semantic-release](https://github.com/semantic-release)/git requirement ([a262311](https://github.com/wmfs/gazetteer-blueprint/commit/a262311))
+* **deps-dev:** Update [@semantic-release](https://github.com/semantic-release)/git requirement ([fc98ed6](https://github.com/wmfs/gazetteer-blueprint/commit/fc98ed6))
+* Publish to NPM restricted ([5042381](https://github.com/wmfs/gazetteer-blueprint/commit/5042381))
+* **deps-dev:** Update [@wmfs](https://github.com/wmfs)/tymly-etl-plugin requirement ([eece665](https://github.com/wmfs/gazetteer-blueprint/commit/eece665))
+* **deps-dev:** Update [@wmfs](https://github.com/wmfs)/tymly-pg-plugin requirement ([752b2cb](https://github.com/wmfs/gazetteer-blueprint/commit/752b2cb))
+* **deps-dev:** Update mocha requirement from 5.2.0 to 6.1.4 ([86f024e](https://github.com/wmfs/gazetteer-blueprint/commit/86f024e))
+* **deps-dev:** Update nyc requirement from 13.1.0 to 14.1.1 ([c492a13](https://github.com/wmfs/gazetteer-blueprint/commit/c492a13))
+* **deps-dev:** Update rimraf requirement from 2.6.2 to 2.6.3 ([1ca5716](https://github.com/wmfs/gazetteer-blueprint/commit/1ca5716))
+* **deps-dev:** Update semantic-release requirement ([7366eb0](https://github.com/wmfs/gazetteer-blueprint/commit/7366eb0))
+
+
+### 📚 Documentation
+
+* add circleci status [skip ci] ([a5b09a7](https://github.com/wmfs/gazetteer-blueprint/commit/a5b09a7))
+
+
+### ⚙️ Continuous Integrations
+
+* **circle:** Update CircleCI config - Travis migration ([f5920a7](https://github.com/wmfs/gazetteer-blueprint/commit/f5920a7))
+* **travis:** remove Travis config ([13c8281](https://github.com/wmfs/gazetteer-blueprint/commit/13c8281))
+
 ## [1.7.3](https://github.com/wmfs/gazetteer-blueprint/compare/v1.7.2...v1.7.3) (2019-04-03)
 
 
