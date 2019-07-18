@@ -261,6 +261,11 @@
       "maxLength": 10,
       "title": "Data Source",
       "description": "Where this data has come from - Ordnance Survey, legacy, etc"
+    },
+    "maskingNumber": {
+      "type": "string",
+      "title": "Masking Number",
+      "description": "Masking number calculated from the UPRN of the property"
     }
   },
   "indexes": [
@@ -302,6 +307,10 @@
     },
     {
       "columns": ["usrn"],
+      "unique": false
+    },
+    {
+      "columns": ["maskingNumber"],
       "unique": false
     },
     {
