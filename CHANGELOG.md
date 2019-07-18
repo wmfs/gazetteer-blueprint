@@ -1,3 +1,10 @@
+# [1.9.0](https://github.com/wmfs/gazetteer-blueprint/compare/v1.8.0...v1.9.0) (2019-07-18)
+
+
+### ✨ Features
+
+* add masking number ([e05b39e](https://github.com/wmfs/gazetteer-blueprint/commit/e05b39e))
+
 # [1.8.0](https://github.com/wmfs/gazetteer-blueprint/compare/v1.7.3...v1.8.0) (2019-07-16)
 
 
