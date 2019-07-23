@@ -243,6 +243,12 @@
       "title": "Command Area Id",
       "description": "The Command Area Id"
     },
+    "commandAreaLabel": {
+      "typeHint": "text",
+      "type": "string",
+      "title": "Command Area Label",
+      "description": "The Command Area Label"
+    },
     "boroughId": {
       "typeHint": "integer",
       "type": "integer",
