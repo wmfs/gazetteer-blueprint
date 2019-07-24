@@ -1,3 +1,15 @@
+# [1.10.0](https://github.com/wmfs/gazetteer-blueprint/compare/v1.9.0...v1.10.0) (2019-07-24)
+
+
+### ✨ Features
+
+* **new postgres functions:** Postgres functions to convert between uprn and masking code ([8275ad2](https://github.com/wmfs/gazetteer-blueprint/commit/8275ad2))
+
+
+### 📦 Code Refactoring
+
+* add command area label to gazetteer model ([915aadb](https://github.com/wmfs/gazetteer-blueprint/commit/915aadb))
+
 # [1.9.0](https://github.com/wmfs/gazetteer-blueprint/compare/v1.8.0...v1.9.0) (2019-07-18)
 
 
