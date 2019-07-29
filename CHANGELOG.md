@@ -1,3 +1,10 @@
+# [1.12.0](https://github.com/wmfs/gazetteer-blueprint/compare/v1.11.0...v1.12.0) (2019-07-29)
+
+
+### ✨ Features
+
+* Add model for rendezvous points ([2a072cf](https://github.com/wmfs/gazetteer-blueprint/commit/2a072cf))
+
 # [1.11.0](https://github.com/wmfs/gazetteer-blueprint/compare/v1.10.0...v1.11.0) (2019-07-24)
 
 
