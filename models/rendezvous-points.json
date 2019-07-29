@@ -1,0 +1,42 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Property Alerts",
+  "description": "Messages and queries about properties",
+  "primaryKey": [
+    "uprn",
+    "coordinates"
+  ],
+  "type": "object",
+  "properties": {
+    "uprn": {
+      "typeHint": "uprn",
+      "type": "integer",
+      "maxLength": 12,
+      "title": "UPRN",
+      "description": "UPRN of the property where the rendezvous point is located"
+    },
+    "type": {
+      "typeHint": "choice",
+      "type": "string",
+      "title": "Type",
+      "description": "Rendezvous point type"
+    },
+    "label": {
+      "typeHint": "text",
+      "type": "string",
+      "title": "Label",
+      "description": "Rendezvous point label"
+    },
+    "coordinates": {
+      "typeHint": "text",
+      "type": "string",
+      "title": "Coordinates",
+      "description": "Rendezvous point coordinates"
+    }
+  },
+  "required": [
+    "type",
+    "label",
+    "coordinates"
+  ]
+}
