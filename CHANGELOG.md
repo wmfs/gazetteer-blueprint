@@ -1,3 +1,10 @@
+# [1.13.0](https://github.com/wmfs/gazetteer-blueprint/compare/v1.12.0...v1.13.0) (2019-08-05)
+
+
+### ✨ Features
+
+* add alias to streets model ([cc653c4](https://github.com/wmfs/gazetteer-blueprint/commit/cc653c4))
+
 # [1.12.0](https://github.com/wmfs/gazetteer-blueprint/compare/v1.11.0...v1.12.0) (2019-07-29)
 
 
