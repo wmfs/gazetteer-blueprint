@@ -1,3 +1,10 @@
+# [1.14.0](https://github.com/wmfs/gazetteer-blueprint/compare/v1.13.0...v1.14.0) (2019-08-05)
+
+
+### ✨ Features
+
+* add gazetteer alias ([c0c7360](https://github.com/wmfs/gazetteer-blueprint/commit/c0c7360))
+
 # [1.13.0](https://github.com/wmfs/gazetteer-blueprint/compare/v1.12.0...v1.13.0) (2019-08-05)
 
 
