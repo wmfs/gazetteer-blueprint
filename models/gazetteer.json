@@ -74,6 +74,13 @@
       "description": "An address label assembles from various elements",
       "audit": "raw"
     },
+    "alias": {
+      "typeHint": "text",
+      "type": "string",
+      "maxLength": 30,
+      "title": "Alias",
+      "description": "The alias for the property in question"
+    },
     "addressDescription": {
       "typeHint": "text",
       "type": "string",
