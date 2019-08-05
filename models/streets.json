@@ -48,6 +48,12 @@
       "title": "Town name",
       "description": "The name of the town the address is within. Source: Contributing Local Authority"
     },
+    "alias": {
+      "typeHint": "text",
+      "type": "string",
+      "title": "Alias",
+      "description": "The alias for the street in question."
+    },
     "administrativeArea": {
       "typeHint": "text",
       "type": "string",
