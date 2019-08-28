@@ -1,3 +1,10 @@
+# [1.15.0](https://github.com/wmfs/gazetteer-blueprint/compare/v1.14.0...v1.15.0) (2019-08-28)
+
+
+### ✨ Features
+
+* add routing node boolean to gazetteer model ([3a827a2](https://github.com/wmfs/gazetteer-blueprint/commit/3a827a2))
+
 # [1.14.0](https://github.com/wmfs/gazetteer-blueprint/compare/v1.13.0...v1.14.0) (2019-08-05)
 
 
