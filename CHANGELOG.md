@@ -1,3 +1,10 @@
+# [1.16.0](https://github.com/wmfs/gazetteer-blueprint/compare/v1.15.0...v1.16.0) (2019-08-29)
+
+
+### ✨ Features
+
+* adding findingAdvice and mapbookText to streets model ([9505b6d](https://github.com/wmfs/gazetteer-blueprint/commit/9505b6d))
+
 # [1.15.0](https://github.com/wmfs/gazetteer-blueprint/compare/v1.14.0...v1.15.0) (2019-08-28)
 
 
