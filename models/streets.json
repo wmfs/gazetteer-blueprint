@@ -145,6 +145,14 @@
       "maxLength": 20,
       "title": "Data Source",
       "description": "Where this data has come from - Ordnance Survey, legacy, etc"
+    },
+    "findingAdvice": {
+      "type": "string",
+      "title": "Finding Advice"
+    },
+    "mapbookText": {
+      "type": "string",
+      "title": "Mapbook Text"
     }
   },
   "required": [
