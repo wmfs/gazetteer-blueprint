@@ -1,0 +1,32 @@
+{
+  "title": "SSI Link",
+  "description": "Site specific information for gazetteer locations linked to properties",
+  "type": "object",
+  "properties": {
+    "uprn": {
+      "typeHint": "uprn",
+      "type": "integer",
+      "maxLength": 12,
+      "title": "UPRN",
+      "description": "UPRN of the property the SSI refers to"
+    },
+    "ssiId": {
+      "type": "uuid",
+      "title": "ID of the SSI information"
+    },
+    "parentUprn": {
+      "type": "integer",
+      "maxLength": 12,
+      "title": "Parent UPRN",
+      "description": "Parent UPRN of the property the SSI is linked to"
+    }
+  },
+  "primaryKey": [
+    "uprn",
+    "ssiId"
+  ],
+  "required": [
+    "uprn",
+    "ssiId"
+  ]
+}
