@@ -1,10 +1,6 @@
 {
   "title": "SSI",
   "description": "Site specific information for gazetteer locations",
-  "primaryKey": [
-    "uprn",
-    "ssiKey"
-  ],
   "type": "object",
   "properties": {
     "uprn": {
@@ -12,20 +8,17 @@
       "type": "integer",
       "maxLength": 12,
       "title": "UPRN",
-      "description": "UPRN of the property the SSI refers to"
+      "description": "UPRN of the property where the alarm is located"
     },
-    "ssiKey": {
-      "typeHint": "integer",
-      "type": "integer",
-      "maxLength": 12,
-      "title": "SSI Key",
-      "description": "A key that identifies a specific piece of SSI"
+    "category": {
+      "type": "string",
+      "title": "Category for the SSI information"
     },
-    "notes": {
-      "typeHint": "notes",
+    "information": {
+      "typeHint": "information",
       "type": "string",
       "maxLength": 1000,
-      "title": "Notes"
+      "title": "Information"
     },
     "originHashSum": {
       "typeHint": "text",
@@ -43,7 +36,7 @@
   },
   "required": [
     "uprn",
-    "ssiKey",
-    "notes"
+    "category",
+    "information"
   ]
 }
