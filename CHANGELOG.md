@@ -1,3 +1,10 @@
+# [1.17.0](https://github.com/wmfs/gazetteer-blueprint/compare/v1.16.0...v1.17.0) (2019-09-06)
+
+
+### ✨ Features
+
+* create view sql script ([2a2838c](https://github.com/wmfs/gazetteer-blueprint/commit/2a2838c))
+
 # [1.16.0](https://github.com/wmfs/gazetteer-blueprint/compare/v1.15.0...v1.16.0) (2019-08-29)
 
 
