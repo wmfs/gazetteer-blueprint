@@ -1,3 +1,10 @@
+## [1.17.1](https://github.com/wmfs/gazetteer-blueprint/compare/v1.17.0...v1.17.1) (2019-09-09)
+
+
+### 🐛 Bug Fixes
+
+* remove pin geometry col from view as not in model - not needed ([7c2f2f2](https://github.com/wmfs/gazetteer-blueprint/commit/7c2f2f2))
+
 # [1.17.0](https://github.com/wmfs/gazetteer-blueprint/compare/v1.16.0...v1.17.0) (2019-09-06)
 
 
