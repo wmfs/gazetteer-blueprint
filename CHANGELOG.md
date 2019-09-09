@@ -1,3 +1,10 @@
+# [1.18.0](https://github.com/wmfs/gazetteer-blueprint/compare/v1.17.1...v1.18.0) (2019-09-09)
+
+
+### ✨ Features
+
+* view for expanded gaz ([f9c1927](https://github.com/wmfs/gazetteer-blueprint/commit/f9c1927))
+
 ## [1.17.1](https://github.com/wmfs/gazetteer-blueprint/compare/v1.17.0...v1.17.1) (2019-09-09)
 
 
