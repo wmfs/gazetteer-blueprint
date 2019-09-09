@@ -40,7 +40,6 @@ CREATE OR REPLACE VIEW wmfs.expanded_gazetteer_view AS
           gaz.borough_id,
           gaz.district_id,
           gaz.data_source,
-          gaz.pin,
           gaz.alias,
           gaz.routing_node,
           ac.small_icon as small_icon,
