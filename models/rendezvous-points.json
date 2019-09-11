@@ -32,6 +32,13 @@
       "type": "string",
       "title": "Coordinates",
       "description": "Rendezvous point coordinates"
+    },
+    "parentUprn": {
+      "typeHint": "uprn",
+      "type": "integer",
+      "maxLength": 12,
+      "title": "Parent UPRN",
+      "description": "UPRN of the parent property that has the linked RVP"
     }
   },
   "required": [
