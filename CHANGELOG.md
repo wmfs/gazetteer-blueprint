@@ -1,3 +1,21 @@
+# [1.19.0](https://github.com/wmfs/gazetteer-blueprint/compare/v1.18.0...v1.19.0) (2019-09-11)
+
+
+### ✨ Features
+
+* update ssi models and new ssi link model ([151c233](https://github.com/wmfs/gazetteer-blueprint/commit/151c233))
+
+
+### 🛠 Builds
+
+* **deps-dev:** update dev dependancies ([216158a](https://github.com/wmfs/gazetteer-blueprint/commit/216158a))
+
+
+### 📦 Code Refactoring
+
+* **rendezvous-points.json:** add parentUprn field to rendezvous-points model ([cd29d59](https://github.com/wmfs/gazetteer-blueprint/commit/cd29d59))
+* **responses.json:** add parentUprn field to responses model ([f5e4f66](https://github.com/wmfs/gazetteer-blueprint/commit/f5e4f66))
+
 # [1.18.0](https://github.com/wmfs/gazetteer-blueprint/compare/v1.17.1...v1.18.0) (2019-09-09)
 
 
