@@ -32,6 +32,23 @@
       "maxLength": 10,
       "title": "Data Source",
       "description": "Where this data has come from - Ordnance Survey, legacy, etc"
+    },
+    "securityLevel": {
+      "type": "string",
+      "title": "Security Level",
+      "description": "Security level to reflect sensitivity of SSI information"
+    },
+    "securityLevelValidityDate": {
+      "type": "string",
+      "format": "date-time",
+      "title": "Security Level Validity Date",
+      "description": "Date that the security level is valid until"
+    },
+    "reviewDate": {
+      "type": "string",
+      "format": "date-time",
+      "title": "Review Date",
+      "description": "Date for SSI information to be reviewed by"
     }
   },
   "required": [
