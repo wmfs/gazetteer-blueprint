@@ -1,3 +1,10 @@
+# [1.20.0](https://github.com/wmfs/gazetteer-blueprint/compare/v1.19.0...v1.20.0) (2019-09-12)
+
+
+### ✨ Features
+
+* ssi add new fields ([0ad580a](https://github.com/wmfs/gazetteer-blueprint/commit/0ad580a))
+
 # [1.19.0](https://github.com/wmfs/gazetteer-blueprint/compare/v1.18.0...v1.19.0) (2019-09-11)
 
 
