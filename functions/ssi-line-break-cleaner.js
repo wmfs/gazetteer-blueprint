@@ -1,12 +1,13 @@
 function ssiLineBreakCleaner (ctx) {
   return function ssiLineBreakCleaner (sourceRow, callback) {
     if (sourceRow[0] === 67 && sourceRow[4] !== null) {
-      const from = sourceRow[4]
-      const to = from
-        .replace(/\r/g, '')
-        .replace(/\n/g, '/r/n')
+      const category = sourceRow[4]
+      const information = sourceRow[5]
 
-      sourceRow[4] = to
+      const notes = `${category}:/r/n${category.replace(/./g, '-')}/r/n${information}`
+
+      sourceRow[4] = notes
+      sourceRow.pop()
     }
 
     callback(null, sourceRow)
