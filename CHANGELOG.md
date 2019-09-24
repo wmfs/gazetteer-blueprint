@@ -1,3 +1,17 @@
+# [1.21.0](https://github.com/wmfs/gazetteer-blueprint/compare/v1.20.0...v1.21.0) (2019-09-24)
+
+
+### ✨ Features
+
+* changes to ssi line break cleaner function as ssi model has been refactored ([0a10802](https://github.com/wmfs/gazetteer-blueprint/commit/0a10802))
+* flattened ssi view ([4fa54f7](https://github.com/wmfs/gazetteer-blueprint/commit/4fa54f7))
+* ssi flattened view to have modified/created timestamps ([38d4960](https://github.com/wmfs/gazetteer-blueprint/commit/38d4960))
+
+
+### 📦 Code Refactoring
+
+* model title and description ([3c7f2b6](https://github.com/wmfs/gazetteer-blueprint/commit/3c7f2b6))
+
 # [1.20.0](https://github.com/wmfs/gazetteer-blueprint/compare/v1.19.0...v1.20.0) (2019-09-12)
 
 
