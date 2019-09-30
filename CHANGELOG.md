@@ -1,3 +1,16 @@
+## [1.21.1](https://github.com/wmfs/gazetteer-blueprint/compare/v1.21.0...v1.21.1) (2019-09-30)
+
+
+### 🐛 Bug Fixes
+
+* update ssi flattened view ([14aa4ac](https://github.com/wmfs/gazetteer-blueprint/commit/14aa4ac))
+* uprn type ssi link model ([59e08ed](https://github.com/wmfs/gazetteer-blueprint/commit/59e08ed))
+
+
+### 📦 Code Refactoring
+
+* ssi tables so pk is uprn, category ([6cb7892](https://github.com/wmfs/gazetteer-blueprint/commit/6cb7892))
+
 # [1.21.0](https://github.com/wmfs/gazetteer-blueprint/compare/v1.20.0...v1.21.0) (2019-09-24)
 
 
