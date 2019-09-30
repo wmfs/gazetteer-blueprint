@@ -51,6 +51,10 @@
       "description": "Date for SSI information to be reviewed by"
     }
   },
+  "primaryKey": [
+    "uprn",
+    "category"
+  ],
   "required": [
     "uprn",
     "category",
