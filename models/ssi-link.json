@@ -11,14 +11,13 @@
       "description": "UPRN of the property the SSI refers to"
     },
     "parentUprn": {
-      "type": "string",
+      "type": "integer",
       "maxLength": 12,
       "title": "Parent UPRN",
       "description": "Parent UPRN of the property the SSI is linked to"
     },
     "parentCategory": {
       "type": "string",
-      "maxLength": 12,
       "title": "Parent Category",
       "description": "Parent category of the property the SSI is linked to"
     }
