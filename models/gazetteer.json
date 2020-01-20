@@ -288,6 +288,13 @@
   },
   "indexes": [
     {
+      "columns": [
+        "uprn",
+        "counter"
+      ],
+      "unique": true
+    },
+    {
       "columns": ["origin_hash_sum"],
       "unique": false
     },
