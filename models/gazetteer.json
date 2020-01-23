@@ -289,6 +289,11 @@
       "type": "boolean",
       "title": "Marked As Invalid",
       "description": "Whether this property is marked as invalid"
+    },
+    "markedAsError": {
+      "type": "boolean",
+      "title": "Marked As Error",
+      "description": "Whether this property is marked as error"
     }
   },
   "indexes": [
