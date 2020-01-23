@@ -290,10 +290,10 @@
       "title": "Marked As Invalid",
       "description": "Whether this property is marked as invalid"
     },
-    "markedAsError": {
+    "excludeFromVisionExtract": {
       "type": "boolean",
       "title": "Marked As Error",
-      "description": "Whether this property is marked as error"
+      "description": "Whether this property should be excluded from the Vision Gazetteer extract"
     }
   },
   "indexes": [
