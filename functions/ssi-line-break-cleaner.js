@@ -10,6 +10,7 @@ function ssiLineBreakCleaner (ctx) {
       sourceRow.pop()
     } else if (sourceRow[0] === 65) {
       sourceRow.pop()
+      sourceRow.pop()
     }
 
     callback(null, sourceRow)
