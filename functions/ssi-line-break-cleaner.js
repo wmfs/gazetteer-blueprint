@@ -9,8 +9,8 @@ function ssiLineBreakCleaner (ctx) {
       sourceRow[4] = notes
       sourceRow.pop()
     } else if (sourceRow[0] === 65) {
-      sourceRow.pop()
-      sourceRow.pop()
+      sourceRow.pop() // strip marked_as_invalid
+      sourceRow.pop() // strip marked_as_error
     }
 
     callback(null, sourceRow)
