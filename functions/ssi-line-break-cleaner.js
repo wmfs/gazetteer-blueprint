@@ -10,7 +10,7 @@ function ssiLineBreakCleaner (ctx) {
       sourceRow.pop()
     } else if (sourceRow[0] === 65) {
       sourceRow.pop() // strip marked_as_invalid
-      sourceRow.pop() // strip marked_as_error
+      sourceRow.pop() // strip exclude_from_vision_extract
     }
 
     callback(null, sourceRow)
