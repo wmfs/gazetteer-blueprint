@@ -1,3 +1,26 @@
+# [1.23.0](https://github.com/wmfs/gazetteer-blueprint/compare/v1.22.0...v1.23.0) (2020-01-23)
+
+
+### ✨ Features
+
+* add marked as invalid flag to gazetteer table and strip from vision extract [ch347] ([11e8abf](https://github.com/wmfs/gazetteer-blueprint/commit/11e8abf59ec17d7f3accce764f23a3759979fb76))
+* marked as error column on gazetteer model and strip from vision extract ([8b1b475](https://github.com/wmfs/gazetteer-blueprint/commit/8b1b4758171d1d939e5e90d4052acff20ca47037))
+* rename gaz column for excluding from extract [ch347] [ch349] ([343349c](https://github.com/wmfs/gazetteer-blueprint/commit/343349c7db1f928e4993977d3630083f5e27f9d2))
+
+
+### 🛠 Builds
+
+* **deps-dev:** Bump [@semantic-release](https://github.com/semantic-release)/exec from 3.3.8 to 4.0.0 ([291722d](https://github.com/wmfs/gazetteer-blueprint/commit/291722d6ecc385c8f72c2fc042de3be5606a4ffe))
+* **deps-dev:** Bump [@wmfs](https://github.com/wmfs)/tymly from 1.110.0 to 1.112.0 ([9cff571](https://github.com/wmfs/gazetteer-blueprint/commit/9cff5711e3034cc08de990340b5547be05ed48a0))
+* **deps-dev:** Bump [@wmfs](https://github.com/wmfs)/tymly from 1.112.0 to 1.112.1 ([8cbdfb1](https://github.com/wmfs/gazetteer-blueprint/commit/8cbdfb192c165d709c73a234b7c98e297df9e0dd))
+* **deps-dev:** Bump [@wmfs](https://github.com/wmfs)/tymly-pg-plugin from 1.151.0 to 1.151.1 ([e7bc9ff](https://github.com/wmfs/gazetteer-blueprint/commit/e7bc9ff311bbf5ea8febe3760175287e58e48117))
+* **deps-dev:** Bump codecov from 3.6.1 to 3.6.2 ([d3de462](https://github.com/wmfs/gazetteer-blueprint/commit/d3de4622cbb60181e47063cc91fd446e366a1ed1))
+
+
+### 📦 Code Refactoring
+
+* state which columns are being stripped ([a7c993d](https://github.com/wmfs/gazetteer-blueprint/commit/a7c993d74cf1871d239f7ea509d263b35e38832f))
+
 # [1.22.0](https://github.com/wmfs/gazetteer-blueprint/compare/v1.21.1...v1.22.0) (2020-01-20)
 
 
