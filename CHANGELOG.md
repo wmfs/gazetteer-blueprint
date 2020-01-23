@@ -1,3 +1,10 @@
+## [1.23.1](https://github.com/wmfs/gazetteer-blueprint/compare/v1.23.0...v1.23.1) (2020-01-23)
+
+
+### 🐛 Bug Fixes
+
+* ssi transform replace characters ([95006f2](https://github.com/wmfs/gazetteer-blueprint/commit/95006f2b33ec40959356eb09a9327ebccd56c261))
+
 # [1.23.0](https://github.com/wmfs/gazetteer-blueprint/compare/v1.22.0...v1.23.0) (2020-01-23)
 
 
