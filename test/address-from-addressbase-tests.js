@@ -6,7 +6,7 @@ const gazetteerAddress = require('../functions/utils/gazetteer-address')
 describe('extract address for gazetteer', () => {
   describe('addresses', () => {
     const tests = [
-      [ 'address with organisation',
+      ['address with organisation',
         {
           rmOrganisationName: null,
           laOrganisation: 'organisation',
