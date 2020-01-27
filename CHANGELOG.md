@@ -1,3 +1,17 @@
+# [1.24.0](https://github.com/wmfs/gazetteer-blueprint/compare/v1.23.1...v1.24.0) (2020-01-27)
+
+
+### ✨ Features
+
+* Exporting CSV Delta File state resource to accept array of functions [ch405] ([febf47b](https://github.com/wmfs/gazetteer-blueprint/commit/febf47b17596aa1d6e100c04c6f2b10d8450a956))
+
+
+### 🛠 Builds
+
+* **deps-dev:** Bump [@wmfs](https://github.com/wmfs)/tymly from 1.112.1 to 1.113.0 ([802fe4c](https://github.com/wmfs/gazetteer-blueprint/commit/802fe4ca64afdb5c913850a8695c5dbb989e2ea0))
+* **deps-dev:** Bump [@wmfs](https://github.com/wmfs)/tymly-etl-plugin from 1.117.0 to 1.119.0 ([41705aa](https://github.com/wmfs/gazetteer-blueprint/commit/41705aaceab3676fedd0c54a50e3c38f5b69e132))
+* **deps-dev:** Bump mocha from 7.0.0 to 7.0.1 ([cd9f0d2](https://github.com/wmfs/gazetteer-blueprint/commit/cd9f0d2626a20b3509a389d600f98f50dcc80c12))
+
 ## [1.23.1](https://github.com/wmfs/gazetteer-blueprint/compare/v1.23.0...v1.23.1) (2020-01-23)
 
 
