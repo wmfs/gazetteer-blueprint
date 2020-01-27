@@ -49,4 +49,5 @@ CREATE OR REPLACE VIEW wmfs.expanded_gazetteer_view AS
           gaz._modified,
           gaz._modified_by
      FROM wmfs.gazetteer gaz
-LEFT JOIN ordnance_survey.addressbase_classifications ac ON (gaz.class = ac.concatenated);
+LEFT JOIN ordnance_survey.addressbase_classifications ac ON (gaz.class = ac.concatenated)
+WHERE gaz.marked_as_invalid is null or gaz.marked_as_invalid = false;
