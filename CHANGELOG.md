@@ -1,3 +1,15 @@
+# [1.25.0](https://github.com/wmfs/gazetteer-blueprint/compare/v1.24.0...v1.25.0) (2020-01-27)
+
+
+### ✨ Features
+
+* update view to exclude records marked as invalid [ch349] ([63c4c3e](https://github.com/wmfs/gazetteer-blueprint/commit/63c4c3edc1616c838bc4429be9f973e88168d775))
+
+
+### 🛠 Builds
+
+* **deps-dev:** Bump [@wmfs](https://github.com/wmfs)/tymly-pg-plugin from 1.151.1 to 1.153.0 ([11bcd68](https://github.com/wmfs/gazetteer-blueprint/commit/11bcd688adfe1ecb1ab4f3946ca3c9364960773f))
+
 # [1.24.0](https://github.com/wmfs/gazetteer-blueprint/compare/v1.23.1...v1.24.0) (2020-01-27)
 
 
