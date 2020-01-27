@@ -29,7 +29,7 @@
     "semantic-release": "15.14.0",
     "standard": "14.3.1",
     "rimraf": "3.0.0",
-    "@semantic-release/changelog": "3.0.6",
+    "@semantic-release/changelog": "5.0.0",
     "@semantic-release/git": "7.0.18",
     "@semantic-release/exec": "5.0.0",
     "@wmfs/tymly": "1.117.0",
