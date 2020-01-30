@@ -294,6 +294,10 @@
       "type": "boolean",
       "title": "Marked As Error",
       "description": "Whether this property should be excluded from the Vision Gazetteer extract"
+    },
+    "primaryFlag": {
+      "type": "integer",
+      "title": "Primary Flag"
     }
   },
   "indexes": [
