@@ -30,7 +30,7 @@
     "standard": "14.3.1",
     "rimraf": "3.0.2",
     "@semantic-release/changelog": "5.0.0",
-    "@semantic-release/git": "7.0.18",
+    "@semantic-release/git": "9.0.0",
     "@semantic-release/exec": "5.0.0",
     "@wmfs/tymly": "1.119.0",
     "@wmfs/tymly-etl-plugin": "1.126.0",
