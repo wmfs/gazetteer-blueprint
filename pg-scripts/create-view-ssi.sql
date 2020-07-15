@@ -11,7 +11,7 @@ AND a.parent_category = b.category;
 CREATE OR REPLACE VIEW wmfs.ssi_aggregated AS
 SELECT
 uprn,
-STRING_AGG(category || E'\n' || REGEXP_REPLACE(category, '.', '-', 'g') || E'\n' || information, E'\n\n') AS notes,
+STRING_AGG(category || E'\n' || REGEXP_REPLACE(category, '.', '-', 'g') || E'\n' || information, E'\n\n' ORDER BY category) AS notes,
 _modified,
 _created
 FROM wmfs.ssi_flattened
