@@ -1,3 +1,15 @@
+## [1.27.1](https://github.com/wmfs/gazetteer-blueprint/compare/v1.27.0...v1.27.1) (2020-07-16)
+
+
+### 🐛 Bug Fixes
+
+* order ssi notes by category ([4ca540a](https://github.com/wmfs/gazetteer-blueprint/commit/4ca540a3cbd0043289eb2dd4bb175b7a6c048948))
+
+
+### 🛠 Builds
+
+* **deps-dev:** Bump [@wmfs](https://github.com/wmfs)/tymly-pg-plugin from 1.208.0 to 1.210.0 ([6052c55](https://github.com/wmfs/gazetteer-blueprint/commit/6052c55cfae5863e910ca3ad35917832a80e45a6))
+
 # [1.27.0](https://github.com/wmfs/gazetteer-blueprint/compare/v1.26.0...v1.27.0) (2020-07-15)
 
 
