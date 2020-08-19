@@ -158,6 +158,10 @@
   "required": [
     "usrn",
     "description"
+  ],
+  "label": [
+    "description",
+    "town_name"
   ]
 }
 
