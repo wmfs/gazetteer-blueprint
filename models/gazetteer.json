@@ -369,5 +369,6 @@
     "uprn",
     "counter",
     "addressLabel"
-  ]
+  ],
+  "label": "address_label"
 }
