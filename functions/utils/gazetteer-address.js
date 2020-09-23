@@ -1,4 +1,5 @@
 const combineNumbersAndSuffixes = require('./combine-numbers-and-suffixes')
+const postcodeSplitter = require('../../shared/postcode-splitter')
 
 function gazetteerAddress (addressbase) {
   const simplifiedAddressbase = {
@@ -103,7 +104,8 @@ function areaName2 (addressbase) {
 } // areaName2
 
 function postCode (addressbase) {
-  return addressbase.postcode || addressbase.postcodeLocator || null
+  const postcode = addressbase.postcode || addressbase.postcodeLocator || null
+  return postcodeSplitter(postcode)
 } // postCode
 
 function postTown (addressbase) {
