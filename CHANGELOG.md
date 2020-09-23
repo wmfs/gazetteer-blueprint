@@ -1,3 +1,20 @@
+# [1.28.0](https://github.com/wmfs/gazetteer-blueprint/compare/v1.27.2...v1.28.0) (2020-09-23)
+
+
+### ✨ Features
+
+* Ensure gazetteer has postcodes with spaces [ch2230] ([dede3ba](https://github.com/wmfs/gazetteer-blueprint/commit/dede3ba2d58f013be0d3b91a6cd6655b526c315e))
+
+
+### 🛠 Builds
+
+* **deps-dev:** Bump [@wmfs](https://github.com/wmfs)/tymly-pg-plugin from 1.224.0 to 1.225.0 ([2a71d2f](https://github.com/wmfs/gazetteer-blueprint/commit/2a71d2fec51b16161ba878c2570e4890b2b2dede))
+* **deps-dev:** Bump [@wmfs](https://github.com/wmfs)/tymly-pg-plugin from 1.225.0 to 1.225.1 ([6c5b23e](https://github.com/wmfs/gazetteer-blueprint/commit/6c5b23e9e27dea22bee23bd0bae910ec87cf1a38))
+* **deps-dev:** Bump [@wmfs](https://github.com/wmfs)/tymly-pg-plugin from 1.225.1 to 1.225.2 ([76a5d5b](https://github.com/wmfs/gazetteer-blueprint/commit/76a5d5bb44e935d5b570a184875249394a6d8074))
+* **deps-dev:** Bump [@wmfs](https://github.com/wmfs)/tymly-test-helpers from 1.4.2 to 1.6.0 ([75e1341](https://github.com/wmfs/gazetteer-blueprint/commit/75e13418d64d00df0847d5347268f2097542b51c))
+* **deps-dev:** Bump [@wmfs](https://github.com/wmfs)/tymly-test-helpers from 1.6.0 to 1.7.0 ([1b6b422](https://github.com/wmfs/gazetteer-blueprint/commit/1b6b42200c414cc70e4a499070e31c8a3f378834))
+* **deps-dev:** Bump semantic-release from 17.1.1 to 17.1.2 ([9f88292](https://github.com/wmfs/gazetteer-blueprint/commit/9f88292cd555267415e24246ff74c482c71d33c9))
+
 ## [1.27.2](https://github.com/wmfs/gazetteer-blueprint/compare/v1.27.1...v1.27.2) (2020-08-31)
 
 
