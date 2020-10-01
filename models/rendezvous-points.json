@@ -1,10 +1,6 @@
 {
   "title": "Rendezvous Points",
   "description": "Rendezvous Points",
-  "primaryKey": [
-    "uprn",
-    "coordinates"
-  ],
   "type": "object",
   "properties": {
     "uprn": {
