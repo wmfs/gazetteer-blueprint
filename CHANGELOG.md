@@ -1,3 +1,22 @@
+# [1.29.0](https://github.com/wmfs/gazetteer-blueprint/compare/v1.28.0...v1.29.0) (2020-10-07)
+
+
+### ✨ Features
+
+* SSI formatting issue OTHER ON SITE EQUIPMENT [ch2474] ([26b1601](https://github.com/wmfs/gazetteer-blueprint/commit/26b16015c97adc6caf848410b24b4563133b2b65))
+
+
+### 🛠 Builds
+
+* **deps-dev:** Bump [@wmfs](https://github.com/wmfs)/tymly from 1.160.0 to 1.162.0 ([ae758df](https://github.com/wmfs/gazetteer-blueprint/commit/ae758df52fbce0d6695c5e21dd58cd404bb345a3))
+* **deps-dev:** Bump [@wmfs](https://github.com/wmfs)/tymly from 1.162.0 to 1.164.0 ([9b21868](https://github.com/wmfs/gazetteer-blueprint/commit/9b2186815a617d044fe3b5067c6ee6c214580348))
+* **deps-dev:** Bump [@wmfs](https://github.com/wmfs)/tymly-etl-plugin from 1.140.0 to 1.142.0 ([1615517](https://github.com/wmfs/gazetteer-blueprint/commit/1615517c0002a2ff254d476b536b78c7b2a24610))
+* **deps-dev:** Bump [@wmfs](https://github.com/wmfs)/tymly-etl-plugin from 1.142.0 to 1.143.0 ([465b024](https://github.com/wmfs/gazetteer-blueprint/commit/465b024116bfba968f5611bf7d1490356077561f))
+* **deps-dev:** Bump [@wmfs](https://github.com/wmfs)/tymly-pg-plugin from 1.225.2 to 1.227.0 ([71d640c](https://github.com/wmfs/gazetteer-blueprint/commit/71d640ca3728560b2ace78da5d1622073f61d3a2))
+* **deps-dev:** Bump [@wmfs](https://github.com/wmfs)/tymly-pg-plugin from 1.227.0 to 1.230.0 ([4b5540d](https://github.com/wmfs/gazetteer-blueprint/commit/4b5540dc792f934e0efce4d6ab229ef778a394e4))
+* **deps-dev:** Bump [@wmfs](https://github.com/wmfs)/tymly-pg-plugin from 1.230.0 to 1.231.0 ([c80e527](https://github.com/wmfs/gazetteer-blueprint/commit/c80e527198d843eff8b53fcb8751e148e634a83f))
+* **deps-dev:** Bump codecov from 3.7.2 to 3.8.0 ([73043bd](https://github.com/wmfs/gazetteer-blueprint/commit/73043bd9474a9ba66a44c61738f3f36be323aeba))
+
 # [1.28.0](https://github.com/wmfs/gazetteer-blueprint/compare/v1.27.2...v1.28.0) (2020-09-23)
 
 
