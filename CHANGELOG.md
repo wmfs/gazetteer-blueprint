@@ -1,3 +1,11 @@
+# [1.30.0](https://github.com/wmfs/gazetteer-blueprint/compare/v1.29.0...v1.30.0) (2020-10-08)
+
+
+### ✨ Features
+
+* change RVP PK to uprn, type, coordinates [ch2341] ([a10f22a](https://github.com/wmfs/gazetteer-blueprint/commit/a10f22ae6d05132decee71793e4a3bdb30859497))
+* rvp model to have uuid as pk ([f88c1e9](https://github.com/wmfs/gazetteer-blueprint/commit/f88c1e9f0cdb8d75944b785f13777c4e1ce5d71d))
+
 # [1.29.0](https://github.com/wmfs/gazetteer-blueprint/compare/v1.28.0...v1.29.0) (2020-10-07)
 
 
