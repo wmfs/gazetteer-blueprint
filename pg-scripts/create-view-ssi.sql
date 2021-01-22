@@ -40,7 +40,8 @@ STRING_AGG(
     WHEN 'MOTORWAYS' THEN 23
     END
 ) AS notes,
-_modified,
-_created
+(SELECT MAX(_modified) FROM ARRAY_AGG(_modified)) as _modified,
+(SELECT MIN(_created) FROM ARRAY_AGG(_created)) as _created
 FROM wmfs.ssi_flattened
-GROUP BY uprn, _modified, _created;
+GROUP BY uprn;
+
