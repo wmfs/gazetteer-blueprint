@@ -1,3 +1,10 @@
+## [1.30.3](https://github.com/wmfs/gazetteer-blueprint/compare/v1.30.2...v1.30.3) (2021-03-10)
+
+
+### 🐛 Bug Fixes
+
+* ON ENTRY -> ON-ENTRY [ch4186] ([58aa22d](https://github.com/wmfs/gazetteer-blueprint/commit/58aa22d00b75dfa2587579d367ffcce19bc24d73))
+
 ## [1.30.2](https://github.com/wmfs/gazetteer-blueprint/compare/v1.30.1...v1.30.2) (2021-03-10)
 
 
