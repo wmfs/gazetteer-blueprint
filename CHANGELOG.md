@@ -1,3 +1,24 @@
+## [1.30.4](https://github.com/wmfs/gazetteer-blueprint/compare/v1.30.3...v1.30.4) (2021-03-18)
+
+
+### 🐛 Bug Fixes
+
+* refactor area names [ch4675] ([65474e5](https://github.com/wmfs/gazetteer-blueprint/commit/65474e5fb8cc0eafb6f3215841ad2d7a147a8902))
+
+
+### 🛠 Builds
+
+* **deps-dev:** Bump [@wmfs](https://github.com/wmfs)/tymly from 1.192.0 to 1.193.0 ([9d4c702](https://github.com/wmfs/gazetteer-blueprint/commit/9d4c7022fbbf3316b8e743e42b7efe99d4456680))
+* **deps-dev:** Bump [@wmfs](https://github.com/wmfs)/tymly from 1.193.0 to 1.194.0 ([e3a0f2d](https://github.com/wmfs/gazetteer-blueprint/commit/e3a0f2d75037388c5f00e183aa32de4a6407ec6b))
+* **deps-dev:** Bump chai from 4.3.3 to 4.3.4 ([f9d1d8f](https://github.com/wmfs/gazetteer-blueprint/commit/f9d1d8f70d308afb5805c9b60ab496d8ccb28268))
+* **deps-dev:** Bump mocha from 8.3.1 to 8.3.2 ([110cb17](https://github.com/wmfs/gazetteer-blueprint/commit/110cb17fdd96e7d113c22dfbea05603db678e606))
+* **deps-dev:** Bump semantic-release from 17.4.1 to 17.4.2 ([5cd453c](https://github.com/wmfs/gazetteer-blueprint/commit/5cd453c2f4b80b65612fbebd8f62b62b668026fc))
+
+
+### 🚨 Tests
+
+* update area name in tests ([df44f18](https://github.com/wmfs/gazetteer-blueprint/commit/df44f18f3b47c77a0ee32ff06e1506a0caf798b1))
+
 ## [1.30.3](https://github.com/wmfs/gazetteer-blueprint/compare/v1.30.2...v1.30.3) (2021-03-10)
 
 
