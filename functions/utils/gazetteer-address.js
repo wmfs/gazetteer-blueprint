@@ -18,6 +18,10 @@ function gazetteerAddress (addressbase) {
     postCode: postCode(addressbase)
   }
 
+  if (simplifiedAddressbase.areaName1 === simplifiedAddressbase.areaName2) {
+    simplifiedAddressbase.areaName1 = null
+  }
+
   const number = buildingNumber(simplifiedAddressbase)
 
   return {
@@ -94,13 +98,18 @@ function streetName2 (addressbase) {
 } // streetName2
 
 function areaName1 (addressbase) {
-  return addressbase.doubleDependentLocality || addressbase.dependentLocality || addressbase.locality
+  return addressbase.doubleDependentLocality ||
+    addressbase.dependentLocality ||
+    addressbase.locality ||
+    addressbase.townName ||
+    addressbase.postTown
 } // areaName1
 
 function areaName2 (addressbase) {
-  return addressbase.doubleDependentLocality
-    ? (addressbase.dependentLocality || addressbase.locality)
-    : null
+  return addressbase.dependentLocality ||
+    addressbase.locality ||
+    addressbase.townName ||
+    addressbase.postTown
 } // areaName2
 
 function postCode (addressbase) {
