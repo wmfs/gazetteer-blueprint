@@ -33,6 +33,13 @@
       "title": "Coordinates",
       "description": "Rendezvous point coordinates"
     },
+    "responseCode": {
+      "typeHint": "text",
+      "type": "string",
+      "maxLength": 50,
+      "title": "Response Code",
+      "description": "Turnout information for the Vision command and control system for the access point"
+    },
     "parentUprn": {
       "typeHint": "uprn",
       "type": "integer",
