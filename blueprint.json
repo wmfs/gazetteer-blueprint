@@ -1,7 +1,7 @@
 {
   "namespace": "wmfs",
   "name": "gazetteer",
-  "version": "1.30.3",
+  "version": "1.30.4",
   "label": "Gazetteer",
   "author": "Jez Higgins",
   "organisation": "West Midlands Fire Service",
