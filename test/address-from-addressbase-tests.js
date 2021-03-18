@@ -34,7 +34,7 @@ describe('extract address for gazetteer', () => {
           streetName1: 'ALPHINGTON ROAD',
           streetName2: null,
           areaName1: null,
-          areaName2: null,
+          areaName2: 'EXETER',
           postTown: 'EXETER',
           postCode: 'EX2 8JD'
         }
@@ -68,8 +68,8 @@ describe('extract address for gazetteer', () => {
           buildingNumber: null,
           streetName1: 'HIGH STREET',
           streetName2: null,
-          areaName1: 'MADELEY',
-          areaName2: null,
+          areaName1: null,
+          areaName2: 'MADELEY',
           postTown: 'TELFORD',
           postCode: 'TF7 5BG'
         }
@@ -104,8 +104,8 @@ describe('extract address for gazetteer', () => {
           buildingNumber: '1',
           streetName1: 'FAIRVIEW PARK',
           streetName2: 'STATION ROAD',
-          areaName1: 'WRENBURY',
-          areaName2: null,
+          areaName1: null,
+          areaName2: 'WRENBURY',
           postTown: 'NANTWICH',
           postCode: 'CW5 8HR'
         }
@@ -141,7 +141,7 @@ describe('extract address for gazetteer', () => {
           streetName1: 'POOLHEAD LANE',
           streetName2: null,
           areaName1: null,
-          areaName2: null,
+          areaName2: 'TANWORTH-IN-ARDEN',
           postTown: 'TANWORTH-IN-ARDEN',
           postCode: null
         }
@@ -176,8 +176,8 @@ describe('extract address for gazetteer', () => {
           buildingNumber: '79',
           streetName1: 'EARLSWOOD COMMON',
           streetName2: null,
-          areaName1: 'EARLSWOOD',
-          areaName2: null,
+          areaName1: null,
+          areaName2: 'EARLSWOOD',
           postTown: 'SOLIHULL',
           postCode: 'B94 5SJ'
         }
@@ -252,8 +252,8 @@ describe('extract address for gazetteer', () => {
           buildingNumber: null,
           streetName1: 'KINGS ROAD',
           streetName2: null,
-          areaName1: 'TYSELEY',
-          areaName2: null,
+          areaName1: null,
+          areaName2: 'TYSELEY',
           postTown: 'BIRMINGHAM',
           postCode: 'B11 2AA'
         }
@@ -290,8 +290,8 @@ describe('extract address for gazetteer', () => {
           buildingNumber: '205',
           streetName1: 'KINGS ROAD',
           streetName2: null,
-          areaName1: 'TYSELEY',
-          areaName2: null,
+          areaName1: null,
+          areaName2: 'TYSELEY',
           postTown: 'BIRMINGHAM',
           postCode: 'B11 2AA'
         }
@@ -330,7 +330,7 @@ describe('extract address for gazetteer', () => {
           streetName1: 'WHARFSIDE STREET',
           streetName2: null,
           areaName1: null,
-          areaName2: null,
+          areaName2: 'BIRMINGHAM',
           postTown: 'BIRMINGHAM',
           postCode: 'B1 1AY'
         }
