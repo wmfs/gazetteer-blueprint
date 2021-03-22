@@ -1,3 +1,26 @@
+# [1.31.0](https://github.com/wmfs/gazetteer-blueprint/compare/v1.30.4...v1.31.0) (2021-03-22)
+
+
+### ✨ Features
+
+* Add rendezvous points to vision export [ch4803] ([3c447e1](https://github.com/wmfs/gazetteer-blueprint/commit/3c447e193a8aec9f98fc4b3463cd788a9c1fe95b))
+
+
+### 🐛 Bug Fixes
+
+* added response code to RVP, same as locations [ch4803] ([30f8689](https://github.com/wmfs/gazetteer-blueprint/commit/30f8689cbb0eb8f554b979b537866ac911a6f034))
+* added response code to RVP, same as locations [ch4803] ([b752af2](https://github.com/wmfs/gazetteer-blueprint/commit/b752af2d03238144489dd800243c4e4ce903152b))
+
+
+### 🛠 Builds
+
+* **deps-dev:** Bump [@wmfs](https://github.com/wmfs)/tymly from 1.194.0 to 1.195.0 ([23ac96c](https://github.com/wmfs/gazetteer-blueprint/commit/23ac96c500130d75bc38ac1065144e3bfd3e1211))
+
+
+### ⚙️ Continuous Integrations
+
+* **circle:** update postgres config to 13.2 ([9b1c328](https://github.com/wmfs/gazetteer-blueprint/commit/9b1c328244d59efc05d4ec9f19b45eb4942457d4))
+
 ## [1.30.4](https://github.com/wmfs/gazetteer-blueprint/compare/v1.30.3...v1.30.4) (2021-03-18)
 
 
