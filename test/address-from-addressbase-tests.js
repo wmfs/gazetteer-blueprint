@@ -68,8 +68,8 @@ describe('extract address for gazetteer', () => {
           buildingNumber: null,
           streetName1: 'HIGH STREET',
           streetName2: null,
-          areaName1: null,
-          areaName2: 'MADELEY',
+          areaName1: 'MADELEY',
+          areaName2: 'TELFORD',
           postTown: 'TELFORD',
           postCode: 'TF7 5BG'
         }
@@ -104,8 +104,8 @@ describe('extract address for gazetteer', () => {
           buildingNumber: '1',
           streetName1: 'FAIRVIEW PARK',
           streetName2: 'STATION ROAD',
-          areaName1: null,
-          areaName2: 'WRENBURY',
+          areaName1: 'WRENBURY',
+          areaName2: 'NANTWICH',
           postTown: 'NANTWICH',
           postCode: 'CW5 8HR'
         }
@@ -176,8 +176,8 @@ describe('extract address for gazetteer', () => {
           buildingNumber: '79',
           streetName1: 'EARLSWOOD COMMON',
           streetName2: null,
-          areaName1: null,
-          areaName2: 'EARLSWOOD',
+          areaName1: 'EARLSWOOD',
+          areaName2: 'SOLIHULL',
           postTown: 'SOLIHULL',
           postCode: 'B94 5SJ'
         }
@@ -252,8 +252,8 @@ describe('extract address for gazetteer', () => {
           buildingNumber: null,
           streetName1: 'KINGS ROAD',
           streetName2: null,
-          areaName1: null,
-          areaName2: 'TYSELEY',
+          areaName1: 'TYSELEY',
+          areaName2: 'BIRMINGHAM',
           postTown: 'BIRMINGHAM',
           postCode: 'B11 2AA'
         }
@@ -290,8 +290,8 @@ describe('extract address for gazetteer', () => {
           buildingNumber: '205',
           streetName1: 'KINGS ROAD',
           streetName2: null,
-          areaName1: null,
-          areaName2: 'TYSELEY',
+          areaName1: 'TYSELEY',
+          areaName2: 'BIRMINGHAM',
           postTown: 'BIRMINGHAM',
           postCode: 'B11 2AA'
         }
