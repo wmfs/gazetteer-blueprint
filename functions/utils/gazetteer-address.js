@@ -13,9 +13,15 @@ function gazetteerAddress (addressbase) {
     streetName1: streetName1(addressbase),
     streetName2: streetName2(addressbase),
     areaName1: areaName1(addressbase),
-    areaName2: areaName2(addressbase),
     postTown: postTown(addressbase),
     postCode: postCode(addressbase)
+  }
+
+  simplifiedAddressbase.areaName2 = areaName2(addressbase, simplifiedAddressbase.areaName1)
+
+  if (simplifiedAddressbase.areaName1 && !simplifiedAddressbase.areaName2) {
+    simplifiedAddressbase.areaName2 = simplifiedAddressbase.areaName1
+    simplifiedAddressbase.areaName1 = null
   }
 
   if (simplifiedAddressbase.areaName1 === simplifiedAddressbase.areaName2) {
@@ -105,11 +111,16 @@ function areaName1 (addressbase) {
     addressbase.postTown
 } // areaName1
 
-function areaName2 (addressbase) {
-  return addressbase.dependentLocality ||
-    addressbase.locality ||
-    addressbase.townName ||
-    addressbase.postTown
+function areaName2 (addressbase, areaName1) {
+  if (addressbase.dependentLocality && (addressbase.dependentLocality !== areaName1)) {
+    return addressbase.dependentLocality
+  } else if (addressbase.locality && (addressbase.locality !== areaName1)) {
+    return addressbase.locality
+  } else if (addressbase.townName && (addressbase.townName !== areaName1)) {
+    return addressbase.townName
+  } else {
+    return addressbase.postTown
+  }
 } // areaName2
 
 function postCode (addressbase) {
