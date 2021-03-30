@@ -1,3 +1,10 @@
+## [1.31.1](https://github.com/wmfs/gazetteer-blueprint/compare/v1.31.0...v1.31.1) (2021-03-30)
+
+
+### 🐛 Bug Fixes
+
+* 🐛 Include _created field in the rvp_split_coords view ([4aa6081](https://github.com/wmfs/gazetteer-blueprint/commit/4aa60815cf78543c1fda67a887ab18f17e6dd41e))
+
 # [1.31.0](https://github.com/wmfs/gazetteer-blueprint/compare/v1.30.4...v1.31.0) (2021-03-22)
 
 
