@@ -370,5 +370,6 @@
     "counter",
     "addressLabel"
   ],
-  "label": "address_label"
+  "label": "address_label",
+  "audit": true
 }

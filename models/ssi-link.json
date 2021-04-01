@@ -31,5 +31,6 @@
     "uprn",
     "parentUprn",
     "parentCategory"
-  ]
+  ],
+  "audit": true
 }

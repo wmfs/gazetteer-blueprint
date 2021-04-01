@@ -52,5 +52,6 @@
     "type",
     "label",
     "coordinates"
-  ]
+  ],
+  "audit": true
 }

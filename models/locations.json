@@ -64,5 +64,6 @@
     "xCoordinate",
     "yCoordinate",
     "responseCode"
-  ]
+  ],
+  "audit": true
 }

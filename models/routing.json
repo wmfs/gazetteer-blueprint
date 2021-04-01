@@ -43,5 +43,6 @@
       "title": "Data Source",
       "description": "Where this data has come from - Ordnance Survey, legacy, etc"
     }
-  }
+  },
+  "audit": true
 }
