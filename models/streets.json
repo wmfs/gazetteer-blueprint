@@ -3,7 +3,8 @@
   "title": "Streets",
   "description": "WMFS Street Gazetteer",
   "primaryKey": [
-    "usrn"
+    "usrn",
+    "counter"
   ],
   "type": "object",
   "properties": {
