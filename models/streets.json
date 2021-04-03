@@ -14,6 +14,13 @@
       "title": "USRN",
       "description": "Unique Street Reference Number. Source: Contributing Local Authority"
     },
+    "counter": {
+      "typeHint": "integer",
+      "type": "integer",
+      "columnDefault": 1,
+      "minLength": 1,
+      "description": "A generated sequence number which is combined with the URSN to identify the street (Minimum=1)"
+    },
     "originHashSum": {
       "typeHint": "text",
       "type": "string",
