@@ -1,3 +1,17 @@
+# [1.32.0](https://github.com/wmfs/gazetteer-blueprint/compare/v1.31.1...v1.32.0) (2021-04-07)
+
+
+### ✨ Features
+
+* 🎸 Add wmfs.streets counter column ([bc57b66](https://github.com/wmfs/gazetteer-blueprint/commit/bc57b66cb63e7d9f5b59cac208880267d17c8ebd))
+* 🎸 Change wmfs.streets primary key to (usrn, counter) ([d2ad0ba](https://github.com/wmfs/gazetteer-blueprint/commit/d2ad0bae2ebba080217ee6c89f922ccba4455587))
+
+
+### 🛠 Builds
+
+* **deps-dev:** Bump [@wmfs](https://github.com/wmfs)/tymly from 1.195.0 to 1.195.1 ([c983d4c](https://github.com/wmfs/gazetteer-blueprint/commit/c983d4c65c6550886aa640c0cc76315f42b74158))
+* **deps-dev:** Bump [@wmfs](https://github.com/wmfs)/tymly-pg-plugin from 1.245.0 to 1.246.0 ([d347a43](https://github.com/wmfs/gazetteer-blueprint/commit/d347a43cb793da03f1b4e7391931faf2b3a5f530))
+
 ## [1.31.1](https://github.com/wmfs/gazetteer-blueprint/compare/v1.31.0...v1.31.1) (2021-03-30)
 
 
