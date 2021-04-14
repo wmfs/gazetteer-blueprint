@@ -1,6 +1,6 @@
 function ssiLineBreakCleaner (ctx) {
   return function ssiLineBreakCleaner (sourceRow, callback) {
-    if (sourceRow[0] === 67 && sourceRow[4] !== null) {
+    if (sourceRow[0] === 67 && sourceRow[4] !== null && sourceRow[4] !== undefined) {
       sourceRow[4] = sourceRow[4].replace(/\r/g, '').replace(/\n/g, '/r/n')
 
       // const category = sourceRow[4].replace(/\r/g, '').replace(/\n/g, '/r/n')
