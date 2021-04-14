@@ -1,3 +1,10 @@
+## [1.32.1](https://github.com/wmfs/gazetteer-blueprint/compare/v1.32.0...v1.32.1) (2021-04-14)
+
+
+### 🐛 Bug Fixes
+
+* ssi line break cleaner check notes isn't undefined as well as not null ([025717c](https://github.com/wmfs/gazetteer-blueprint/commit/025717c8f8f9a79c7b4c0603c290e930b9a78114))
+
 # [1.32.0](https://github.com/wmfs/gazetteer-blueprint/compare/v1.31.1...v1.32.0) (2021-04-07)
 
 
