@@ -26,9 +26,7 @@ function addressLabel (gazetteerAddress) {
 } // addressLabel
 
 function numberAndStreet (ga) {
-  return ga.buildingNumber
-    ? `${ga.buildingNumber} ${ga.streetName1}`
-    : ga.streetName1
+  return [ga.buildingNumber, ga.streetName1].filter(e => e).join(' ')
 }
 
 module.exports = addressLabel
