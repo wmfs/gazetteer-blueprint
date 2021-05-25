@@ -1,3 +1,32 @@
+## [1.32.2](https://github.com/wmfs/gazetteer-blueprint/compare/v1.32.1...v1.32.2) (2021-05-25)
+
+
+### 🐛 Bug Fixes
+
+* Vision issue 39 undefined in created address [ch6743] ([7d10fb6](https://github.com/wmfs/gazetteer-blueprint/commit/7d10fb69b25858e96939f49fa761dedb22c103fa))
+
+
+### 🛠 Builds
+
+* **deps-dev:** Bump [@wmfs](https://github.com/wmfs)/tymly from 1.195.1 to 1.196.0 ([2572d72](https://github.com/wmfs/gazetteer-blueprint/commit/2572d72fec04fea31aae5466adf3d06716332b5b))
+* **deps-dev:** Bump [@wmfs](https://github.com/wmfs)/tymly from 1.196.0 to 1.197.0 ([8544bb3](https://github.com/wmfs/gazetteer-blueprint/commit/8544bb38bf649d7391638fc8a29f6c12f468d24c))
+* **deps-dev:** Bump [@wmfs](https://github.com/wmfs)/tymly from 1.197.0 to 1.198.0 ([91b3924](https://github.com/wmfs/gazetteer-blueprint/commit/91b392464d37df37b53737dc562630e38e0a1349))
+* **deps-dev:** Bump [@wmfs](https://github.com/wmfs)/tymly from 1.198.0 to 1.199.0 ([160eecd](https://github.com/wmfs/gazetteer-blueprint/commit/160eecd3be78d1fd5099d89ab2b81b7009d49d4b))
+* **deps-dev:** Bump [@wmfs](https://github.com/wmfs)/tymly from 1.199.0 to 1.200.0 ([c2b3ae1](https://github.com/wmfs/gazetteer-blueprint/commit/c2b3ae117d67760eff1368c3d94a53b704cc731f))
+* **deps-dev:** Bump [@wmfs](https://github.com/wmfs)/tymly from 1.200.0 to 1.201.0 ([a975439](https://github.com/wmfs/gazetteer-blueprint/commit/a975439337f7d7e0020999ca5e00cc6bdc36843d))
+* **deps-dev:** Bump [@wmfs](https://github.com/wmfs)/tymly from 1.201.0 to 1.202.0 ([cc93fc9](https://github.com/wmfs/gazetteer-blueprint/commit/cc93fc90948d0b1413b47f6950135923f2d781b4))
+* **deps-dev:** Bump [@wmfs](https://github.com/wmfs)/tymly from 1.202.0 to 1.203.0 ([bb73a96](https://github.com/wmfs/gazetteer-blueprint/commit/bb73a9601745106799f7ab66892925531cc73b09))
+* **deps-dev:** Bump [@wmfs](https://github.com/wmfs)/tymly from 1.203.0 to 1.204.0 ([0476ecd](https://github.com/wmfs/gazetteer-blueprint/commit/0476ecdc27c1d1878918fdd669ba0d6b0c173fbe))
+* **deps-dev:** Bump [@wmfs](https://github.com/wmfs)/tymly from 1.204.0 to 1.205.0 ([47269ba](https://github.com/wmfs/gazetteer-blueprint/commit/47269ba995c6418de19489967613ecd861bc01ce))
+* **deps-dev:** Bump [@wmfs](https://github.com/wmfs)/tymly from 1.205.0 to 1.206.0 ([5ffd7ba](https://github.com/wmfs/gazetteer-blueprint/commit/5ffd7ba018cd60fa3a668e712b71439829dbd87d))
+* **deps-dev:** Bump [@wmfs](https://github.com/wmfs)/tymly-etl-plugin from 1.151.0 to 1.152.0 ([9e00382](https://github.com/wmfs/gazetteer-blueprint/commit/9e003823dfcfa0f8ad64ef070f10a1ca512621ee))
+* **deps-dev:** Bump [@wmfs](https://github.com/wmfs)/tymly-etl-plugin from 1.152.0 to 1.153.0 ([6615d24](https://github.com/wmfs/gazetteer-blueprint/commit/6615d2425fda1e89c2220136f985ea89121804ab))
+* **deps-dev:** Bump [@wmfs](https://github.com/wmfs)/tymly-pg-plugin from 1.246.0 to 1.246.1 ([a36f921](https://github.com/wmfs/gazetteer-blueprint/commit/a36f921fdc983a089fb94e5b70ec78507c1baa3d))
+* **deps-dev:** Bump [@wmfs](https://github.com/wmfs)/tymly-pg-plugin from 1.246.1 to 1.247.0 ([a30e55f](https://github.com/wmfs/gazetteer-blueprint/commit/a30e55f1d83e76496c0704da3d66b242be0f95d3))
+* **deps-dev:** Bump codecov from 3.8.1 to 3.8.2 ([7bf5319](https://github.com/wmfs/gazetteer-blueprint/commit/7bf53195dccf1c253631fae5c4985923589beecf))
+* **deps-dev:** Bump mocha from 8.3.2 to 8.4.0 ([c7689ef](https://github.com/wmfs/gazetteer-blueprint/commit/c7689ef2183379f530f154f50742c5314bf52fbf))
+* **deps-dev:** Bump semantic-release from 17.4.2 to 17.4.3 ([ba7ccac](https://github.com/wmfs/gazetteer-blueprint/commit/ba7ccac37c846762b792936999e1cf88e3b92f2c))
+
 ## [1.32.1](https://github.com/wmfs/gazetteer-blueprint/compare/v1.32.0...v1.32.1) (2021-04-14)
 
 
