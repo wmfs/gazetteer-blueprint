@@ -1,3 +1,10 @@
+## [1.33.2](https://github.com/wmfs/gazetteer-blueprint/compare/v1.33.1...v1.33.2) (2021-06-08)
+
+
+### 🐛 Bug Fixes
+
+* adjust area name [chch4675] ([ea4b32a](https://github.com/wmfs/gazetteer-blueprint/commit/ea4b32aa3c6e56c2223c1a1cc6b54a2bd2b73a85))
+
 ## [1.33.1](https://github.com/wmfs/gazetteer-blueprint/compare/v1.33.0...v1.33.1) (2021-06-08)
 
 
