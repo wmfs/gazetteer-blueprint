@@ -1,5 +1,5 @@
-module.exports = function excludeGazetteerRecords () {
-  return function excludeGazetteerRecords (sourceRow, callback) {
+module.exports = function updateGazetteerPrimaryFlag () {
+  return function updateGazetteerPrimaryFlag (sourceRow, callback) {
     if (sourceRow[0] === 65) { // gazetteer record
       const primaryFlag = sourceRow[22]
       if (!primaryFlag) {
