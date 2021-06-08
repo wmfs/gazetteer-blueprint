@@ -1,3 +1,15 @@
+## [1.33.1](https://github.com/wmfs/gazetteer-blueprint/compare/v1.33.0...v1.33.1) (2021-06-08)
+
+
+### 🐛 Bug Fixes
+
+* remove counter from streets ([b889fa4](https://github.com/wmfs/gazetteer-blueprint/commit/b889fa43951c8ab3f7204140b43301ff139082de))
+
+
+### 📦 Code Refactoring
+
+* update function name ([e66bd79](https://github.com/wmfs/gazetteer-blueprint/commit/e66bd790a2cf7efe2287227bbd0de7315c547b29))
+
 # [1.33.0](https://github.com/wmfs/gazetteer-blueprint/compare/v1.32.2...v1.33.0) (2021-06-08)
 
 
