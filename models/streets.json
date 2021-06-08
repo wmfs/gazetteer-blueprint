@@ -161,6 +161,16 @@
     "mapbookText": {
       "type": "string",
       "title": "Mapbook Text"
+    },
+    "markedAsInvalid": {
+      "type": "boolean",
+      "title": "Marked As Invalid",
+      "description": "Whether this property is marked as invalid"
+    },
+    "excludeFromVisionExtract": {
+      "type": "boolean",
+      "title": "Marked As Error",
+      "description": "Whether this property should be excluded from the Vision Gazetteer extract"
     }
   },
   "required": [
