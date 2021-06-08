@@ -1,3 +1,25 @@
+# [1.33.0](https://github.com/wmfs/gazetteer-blueprint/compare/v1.32.2...v1.33.0) (2021-06-08)
+
+
+### ✨ Features
+
+* ability to mark streets as invalid and exclude from export ([fb21b7d](https://github.com/wmfs/gazetteer-blueprint/commit/fb21b7d472ba21814773c044cc4ce253bc852941))
+
+
+### 🛠 Builds
+
+* **deps-dev:** Bump [@wmfs](https://github.com/wmfs)/tymly from 1.206.0 to 1.207.0 ([f892667](https://github.com/wmfs/gazetteer-blueprint/commit/f8926678bb25bbfaa5bc07e397c4d490479e6da6))
+* **deps-dev:** Bump [@wmfs](https://github.com/wmfs)/tymly from 1.207.0 to 1.208.0 ([4ff0c0b](https://github.com/wmfs/gazetteer-blueprint/commit/4ff0c0bd64914509c925ed9e833b8fb95e572bc2))
+* **deps-dev:** Bump [@wmfs](https://github.com/wmfs)/tymly from 1.208.0 to 1.209.0 ([637685c](https://github.com/wmfs/gazetteer-blueprint/commit/637685c23fd64fbb93225e3d99b07aa87aa611bd))
+* **deps-dev:** Bump [@wmfs](https://github.com/wmfs)/tymly-etl-plugin from 1.153.0 to 1.154.0 ([9e7b5b0](https://github.com/wmfs/gazetteer-blueprint/commit/9e7b5b0f8f86140b672b0d2a1aeaa4486dda37b3))
+* **deps-dev:** Bump [@wmfs](https://github.com/wmfs)/tymly-pg-plugin from 1.247.0 to 1.248.0 ([2e3b0e2](https://github.com/wmfs/gazetteer-blueprint/commit/2e3b0e29b105fd4e97cff31d0c63070ecb1c68c0))
+* **deps-dev:** Bump [@wmfs](https://github.com/wmfs)/tymly-pg-plugin from 1.248.0 to 1.249.0 ([d1fd577](https://github.com/wmfs/gazetteer-blueprint/commit/d1fd577e3127b0f8c0d0063ebd49501f6e7bb389))
+* **deps-dev:** Bump [@wmfs](https://github.com/wmfs)/tymly-pg-plugin from 1.249.0 to 1.250.0 ([07f6b46](https://github.com/wmfs/gazetteer-blueprint/commit/07f6b464445c544083bd6a86ef522a2b5528accb))
+* **deps-dev:** Bump [@wmfs](https://github.com/wmfs)/tymly-pg-plugin from 1.250.0 to 1.251.0 ([4d7a659](https://github.com/wmfs/gazetteer-blueprint/commit/4d7a65958abf2707c55a54e0d729ddc74852abe4))
+* **deps-dev:** Bump [@wmfs](https://github.com/wmfs)/tymly-pg-plugin from 1.251.0 to 1.252.0 ([d7b2685](https://github.com/wmfs/gazetteer-blueprint/commit/d7b26855b8f5462ac89f630fb3fbe0600d6db14a))
+* **deps-dev:** Bump [@wmfs](https://github.com/wmfs)/tymly-test-helpers from 1.7.0 to 1.8.0 ([8f939a5](https://github.com/wmfs/gazetteer-blueprint/commit/8f939a553bf07652b78d1abf75c79b7a4b147c19))
+* **deps-dev:** Bump mocha from 8.4.0 to 9.0.0 ([2ff1ad4](https://github.com/wmfs/gazetteer-blueprint/commit/2ff1ad43d1ffdeb0e57000e12f92acfb77b8c731))
+
 ## [1.32.2](https://github.com/wmfs/gazetteer-blueprint/compare/v1.32.1...v1.32.2) (2021-05-25)
 
 
