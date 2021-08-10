@@ -1,0 +1,185 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Streets",
+  "description": "WMFS Street Gazetteer",
+  "primaryKey": [
+    "usrn",
+    "counter"
+  ],
+  "type": "object",
+  "properties": {
+    "usrn": {
+      "typeHint": "usrn",
+      "type": "integer",
+      "maxLength": 8,
+      "title": "USRN",
+      "description": "Unique Street Reference Number. Source: Contributing Local Authority"
+    },
+    "counter": {
+      "typeHint": "integer",
+      "type": "integer",
+      "columnDefault": 1,
+      "minLength": 1,
+      "description": "A generated sequence number which is combined with the URSN to identify the street (Minimum=1)"
+    },
+    "originHashSum": {
+      "typeHint": "text",
+      "type": "string",
+      "title": "Hash sum",
+      "description": "Hash representing column data"
+    },
+    "state": {
+      "typeHint": "integer",
+      "type": "integer",
+      "maxLength": 1,
+      "title": "Street State",
+      "description": "A code indentifying the current state of the street, eg 'open'"
+    },
+    "description": {
+      "typeHint": "text",
+      "type": "string",
+      "maxLength": 100,
+      "title": "Street Name or Description",
+      "description": "Name taken from the Local Land and Property Gazetteer (LLPG) street name"
+    },
+    "locality": {
+      "typeHint": "text",
+      "type": "string",
+      "maxLength": 35,
+      "title": "Locality",
+      "description": "Locality areas define an area within a post town. These are only necessary for postal purposes and are used to aid differentiation where there are thoroughfares of the same name in the same locality. For example, HIGH STREET in SHIRLEY and SWAYTHLING in this situation: HIGH STREET, SHIRLEY, SOUTHAMPTON and HIGH STREET, SWAYTHLING, SOUTHAMPTON. Source: Royal Mail"
+    },
+    "townName": {
+      "typeHint": "text",
+      "type": "string",
+      "maxLength": 30,
+      "title": "Town name",
+      "description": "The name of the town the address is within. Source: Contributing Local Authority"
+    },
+    "alias": {
+      "typeHint": "text",
+      "type": "string",
+      "title": "Alias",
+      "description": "The alias for the street in question."
+    },
+    "administrativeArea": {
+      "typeHint": "text",
+      "type": "string",
+      "maxLength": 30,
+      "title": "Administrative area",
+      "description": "Local Highway Authority Name. Source: Contributing Local Authority"
+    },
+    "surface": {
+      "typeHint": "integer",
+      "type": "integer",
+      "maxLength": 1,
+      "title": "Surface",
+      "description": "Code to indicate the surface finish of the street"
+    },
+    "classification": {
+      "typeHint": "integer",
+      "type": "integer",
+      "maxLength": 1,
+      "title": "Classification",
+      "description": "Code for the primary street classification, eg denoting it to be 'open to all vehicles'"
+    },
+    "startX": {
+      "typeHint": "osNatGrid",
+      "type": "number",
+      "maxLength": 8,
+      "multipleOf": 0.01,
+      "title": "Start X",
+      "description": "A value in metres defining the eastings location of the start of the street in accordance to the British National Grid. Source: Ordnance Survey"
+    },
+    "startY": {
+      "typeHint": "osNatGrid",
+      "type": "number",
+      "maxLength": 8,
+      "multipleOf": 0.01,
+      "title": "Start Y",
+      "description": "A value in metres defining the northings location of the start of the street in accordance to the British National Grid. Source: Ordnance Survey"
+    },
+    "endX": {
+      "typeHint": "osNatGrid",
+      "type": "number",
+      "maxLength": 8,
+      "multipleOf": 0.01,
+      "title": "End X",
+      "description": "A value in metres defining the eastings location of the start of the street in accordance to the British National Grid. Source: Ordnance Survey"
+    },
+    "endY": {
+      "typeHint": "osNatGrid",
+      "type": "number",
+      "maxLength": 8,
+      "multipleOf": 0.01,
+      "title": "End Y",
+      "description": "A value in metres defining the northings location of the start of the street in accordance to the British National Grid. Source: Ordnance Survey"
+    },
+    "startLongitude": {
+      "typeHint": "latLong",
+      "type": "number",
+      "maxLength": 9,
+      "multipleOf": 0.00000001,
+      "title": "Start Longitude",
+      "description": "A value defining the Longitude location of the start of the street in accordance with the ETRS89 coordinate reference system. Source: Ordnance Survey"
+    },
+    "startLatitude": {
+      "typeHint": "latLong",
+      "type": "number",
+      "maxLength": 9,
+      "multipleOf": 0.00000001,
+      "title": "Start Latitude",
+      "description": "A value defining the Latitude in accordance of the start of the street with the ETRS89 coordinate reference system. Source: Ordnance Survey"
+    },
+    "endLongitude": {
+      "typeHint": "latLong",
+      "type": "number",
+      "maxLength": 9,
+      "multipleOf": 0.00000001,
+      "title": "End Longitude",
+      "description": "A value defining the Longitude location of the start of the street in accordance with the ETRS89 coordinate reference system. Source: Ordnance Survey"
+    },
+    "endLatitude": {
+      "typeHint": "latLong",
+      "type": "number",
+      "maxLength": 9,
+      "multipleOf": 0.00000001,
+      "title": "End Latitude",
+      "description": "A value defining the Latitude in accordance of the start of the street with the ETRS89 coordinate reference system. Source: Ordnance Survey"
+    },
+    "dataSource": {
+      "typeHint": "text",
+      "type": "string",
+      "maxLength": 20,
+      "title": "Data Source",
+      "description": "Where this data has come from - Ordnance Survey, legacy, etc"
+    },
+    "findingAdvice": {
+      "type": "string",
+      "title": "Finding Advice"
+    },
+    "mapbookText": {
+      "type": "string",
+      "title": "Mapbook Text"
+    },
+    "markedAsInvalid": {
+      "type": "boolean",
+      "title": "Marked As Invalid",
+      "description": "Whether this property is marked as invalid"
+    },
+    "excludeFromVisionExtract": {
+      "type": "boolean",
+      "title": "Marked As Error",
+      "description": "Whether this property should be excluded from the Vision Gazetteer extract"
+    }
+  },
+  "required": [
+    "usrn",
+    "description"
+  ],
+  "label": [
+    "description",
+    "town_name"
+  ]
+}
+
