@@ -1,3 +1,15 @@
+# [1.34.0](https://github.com/wmfs/gazetteer-blueprint/compare/v1.33.5...v1.34.0) (2021-09-06)
+
+
+### ✨ Features
+
+* force build ([35a7e6b](https://github.com/wmfs/gazetteer-blueprint/commit/35a7e6b4c22e8cc8a419b686040c8ebfcd836410))
+
+
+### 🛠 Builds
+
+* set version at 1.33.5 ([9b0e163](https://github.com/wmfs/gazetteer-blueprint/commit/9b0e1634cade3b74417ec05cc2cdcaf38cff586a))
+
 ## [1.33.5](https://github.com/wmfs/gazetteer-blueprint/compare/v1.0.0...v1.33.5) (2021-09-06)
 
 
