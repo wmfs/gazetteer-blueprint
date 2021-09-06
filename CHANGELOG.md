@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/wmfs/gazetteer-blueprint/compare/v1.0.0...v1.0.1) (2021-09-06)
+
+
+### 🐛 Bug Fixes
+
+* readme package link ([2cc50a9](https://github.com/wmfs/gazetteer-blueprint/commit/2cc50a92cbcfa7f5b27c35c6f3149a243a80ad92))
+
 # 1.0.0 (2021-09-06)
 
 
