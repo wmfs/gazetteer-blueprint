@@ -1,9 +1,7 @@
-'use strict'
-
 module.exports = function getAddressLabel () {
-  return async function getAddressLabel (env, event) {
-    const gazetteerModel = env.bootedServices.storage.models.wmfs_gazetteer
-    const gazetteerRecord = await gazetteerModel.find({ where: { uprn: { equals: event.boardKeys.uprn } } })
-    return { addressLabel: gazetteerRecord[0].addressLabel || '' }
+  return async function (env, event) {
+    const model = env.bootedServices.storage.models.wmfs_gazetteer
+    const record = await model.findById([event.boardKeys.uprn, 1])
+    return { addressLabel: record ? record.addressLabel : '' }
   }
 }
