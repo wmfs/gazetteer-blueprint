@@ -1,4 +1,4 @@
-## [1.0.1](https://github.com/wmfs/gazetteer-blueprint/compare/v1.0.0...v1.0.1) (2021-09-06)
+## [1.33.5](https://github.com/wmfs/gazetteer-blueprint/compare/v1.0.0...v1.33.5) (2021-09-06)
 
 
 ### 🐛 Bug Fixes
