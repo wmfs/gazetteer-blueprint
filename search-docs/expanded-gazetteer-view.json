@@ -1,0 +1,33 @@
+{
+  "viewId": "wmfs_expandedGazetteerView",
+  "attributeMapping": {
+    "id": "'expandedGazetteerView#'::text || uprn::text",
+    "docId": "uprn::text",
+    "domain": "'search'::text",
+    "docType": "'wmfs_gazetteer'::text",
+    "title": "uprn || case when masking_number is not null then ' (' || masking_number || ')' else '' end",
+    "description": "address_label::text",
+    "additionalTerms": "case when postcode is not null and length(regexp_replace(postcode, '\\s', '', 'g')) > 0 then string_to_array(regexp_replace(postcode, '\\s', '', 'g'), '')::text[] else NULL::text[] end",
+    "category": "'gazetteer'::text",
+    "eventTimestamp": "NULL::timestamp with time zone",
+    "point": "latitude::text || ',' || longitude::text",
+    "classification": "class::text",
+    "icon": "small_icon::text",
+    "synopsis": "general_description::text",
+    "x": "actual_x::int",
+    "y": "actual_y::int",
+    "activeEvent": "false::boolean",
+    "author": "'gazetteer'::text",
+    "teams": "NULL::text[]",
+    "rating": "NULL::numeric",
+    "data": "NULL::text",
+    "roles": "'{\"$everyone\"}'::text[]",
+    "tags": "NULL::text[]",
+    "language": "'ENG'::text",
+    "rootAncestorId": "NULL::text",
+    "sortString": "uprn::text",
+    "launches": "'{\"launches\":[{\"input\": {\"boardKeys\": {\"uprn\": '||uprn||'}}, \"stateMachineName\": \"wmfs_viewProperty_1_0\"}]}'::text",
+    "created": "_created::timestamp with time zone",
+    "modified": "_modified::timestamp with time zone"
+  }
+}
