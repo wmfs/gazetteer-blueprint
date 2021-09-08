@@ -298,6 +298,11 @@
     "primaryFlag": {
       "type": "integer",
       "title": "Primary Flag"
+    },
+    "lpiStatus": {
+      "type": "integer",
+      "maxLength": 1,
+      "description": "LPI Logical Status, 1: Approved, 3: Alternative, 6: Provisional, 8: Historical"
     }
   },
   "indexes": [
