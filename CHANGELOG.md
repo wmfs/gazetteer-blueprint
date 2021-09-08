@@ -1,3 +1,10 @@
+# [1.36.0](https://github.com/wmfs/gazetteer-blueprint/compare/v1.35.0...v1.36.0) (2021-09-08)
+
+
+### ✨ Features
+
+* addressbase converter to maintain lpi status ([7d86231](https://github.com/wmfs/gazetteer-blueprint/commit/7d862318935afe88653e73f31222e136f1976641))
+
 # [1.35.0](https://github.com/wmfs/gazetteer-blueprint/compare/v1.34.0...v1.35.0) (2021-09-08)
 
 
