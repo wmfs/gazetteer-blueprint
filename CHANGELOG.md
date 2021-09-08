@@ -1,3 +1,10 @@
+# [1.37.0](https://github.com/wmfs/gazetteer-blueprint/compare/v1.36.0...v1.37.0) (2021-09-08)
+
+
+### ✨ Features
+
+* gazetteer view to have lpi status and added in tags of search doc ([f9132d2](https://github.com/wmfs/gazetteer-blueprint/commit/f9132d22a58494a08479762db73ee24624aa7f20))
+
 # [1.36.0](https://github.com/wmfs/gazetteer-blueprint/compare/v1.35.0...v1.36.0) (2021-09-08)
 
 
