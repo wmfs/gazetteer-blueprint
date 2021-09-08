@@ -35,7 +35,8 @@ function addressbasePremiumToGazetteer (ctx) {
       addressLabel: label,
       addressDescription: sourceRow.uprn,
       wardCode: sourceRow.wardCode,
-      dataSource: 'OrdnanceSurvey'
+      dataSource: 'OrdnanceSurvey',
+      lpiStatus: sourceRow.lpiStatus
       // todo: masking number?
     }
 
