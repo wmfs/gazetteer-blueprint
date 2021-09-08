@@ -1,3 +1,16 @@
+# [1.35.0](https://github.com/wmfs/gazetteer-blueprint/compare/v1.34.0...v1.35.0) (2021-09-08)
+
+
+### ✨ Features
+
+* add lpi status to gazetteer model ([01d4607](https://github.com/wmfs/gazetteer-blueprint/commit/01d46074b62f7e798a1f6e63ca8cb4c35626f829))
+
+
+### 🛠 Builds
+
+* **deps-dev:** update dependency [@wmfs](https://github.com/wmfs)/tymly to v1.212.4 ([aed1766](https://github.com/wmfs/gazetteer-blueprint/commit/aed17661e30c3709cb5c3b117198deed937e2e3a))
+* **deps-dev:** update dependency [@wmfs](https://github.com/wmfs)/tymly-test-helpers to v1.10.0 ([0a0a07a](https://github.com/wmfs/gazetteer-blueprint/commit/0a0a07aaa1457f6dc4f130228d5cc5dcaa80e179))
+
 # [1.34.0](https://github.com/wmfs/gazetteer-blueprint/compare/v1.33.5...v1.34.0) (2021-09-06)
 
 
