@@ -22,7 +22,7 @@
     "rating": "NULL::numeric",
     "data": "NULL::text",
     "roles": "'{\"$everyone\"}'::text[]",
-    "tags": "NULL::text[]",
+    "tags": "('{' || case when lpi_status = 1 then 'Approved' when lpi_status = 3 then 'Alternative' when lpi_status = 6 then 'Provisional' when lpi_status = 8 then 'Historical' else '' end || '}')::text[]",
     "language": "'ENG'::text",
     "rootAncestorId": "NULL::text",
     "sortString": "uprn::text",

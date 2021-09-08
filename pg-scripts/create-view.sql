@@ -1,4 +1,6 @@
-CREATE OR REPLACE VIEW wmfs.expanded_gazetteer_view AS
+DROP VIEW IF EXISTS wmfs.expanded_gazetteer_view CASCADE;
+
+CREATE VIEW wmfs.expanded_gazetteer_view AS
    SELECT gaz.uprn,
           gaz.origin_hash_sum,
           gaz.counter,
@@ -9,6 +11,7 @@ CREATE OR REPLACE VIEW wmfs.expanded_gazetteer_view AS
           gaz.parent_uprn,
           gaz.usrn,
           gaz.state,
+          gaz.lpi_status,
           gaz.local_custodian_code,
           gaz.official_flag,
           gaz.address_label,
