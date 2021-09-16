@@ -1,5 +1,14 @@
 DROP VIEW IF EXISTS wmfs.expanded_gazetteer_view CASCADE;
 
+CREATE SCHEMA IF NOT EXISTS ordnance_survey;
+CREATE TABLE IF NOT EXISTS ordnance_survey.addressbase_classifications (
+    concatenated text,
+    class_desc text,
+    general_desc text,
+    small_icon text,
+    large_icon text
+);
+
 CREATE VIEW wmfs.expanded_gazetteer_view AS
    SELECT gaz.uprn,
           gaz.origin_hash_sum,
