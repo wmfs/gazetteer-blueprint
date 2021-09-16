@@ -1,3 +1,16 @@
+## [1.37.1](https://github.com/wmfs/gazetteer-blueprint/compare/v1.37.0...v1.37.1) (2021-09-16)
+
+
+### 🐛 Bug Fixes
+
+* fallback if OS schema does not exist to avoid reliance on ABP blueprint ([35dda25](https://github.com/wmfs/gazetteer-blueprint/commit/35dda25cc9be6475c4550f90130935e51622493a))
+
+
+### 🛠 Builds
+
+* **deps-dev:** update dependency [@wmfs](https://github.com/wmfs)/tymly to v1.213.0 ([2a0e64f](https://github.com/wmfs/gazetteer-blueprint/commit/2a0e64f063bd77eb7702cd0dd12b5a5b4db214eb))
+* **deps-dev:** update dependency [@wmfs](https://github.com/wmfs)/tymly to v1.216.0 ([344e3ae](https://github.com/wmfs/gazetteer-blueprint/commit/344e3ae5e7330fe1e495738ba4cecce1dc9211f3))
+
 # [1.37.0](https://github.com/wmfs/gazetteer-blueprint/compare/v1.36.0...v1.37.0) (2021-09-08)
 
 
