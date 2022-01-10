@@ -26,7 +26,7 @@
     "@wmfs/tymly": "1.228.0",
     "@wmfs/tymly-etl-plugin": "1.156.0",
     "@wmfs/tymly-pg-plugin": "1.258.1",
-    "@wmfs/tymly-test-helpers": "1.11.0",
+    "@wmfs/tymly-test-helpers": "1.13.0",
     "chai": "4.3.4",
     "codecov": "3.8.3",
     "conventional-changelog-metahub": "4.0.1",
