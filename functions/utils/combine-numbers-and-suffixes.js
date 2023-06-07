@@ -1,4 +1,3 @@
-
 // addressbase rules on property numbers
 // there are no end numbers without start numbers
 // there are no suffixes without numbers
