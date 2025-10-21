@@ -1,3 +1,28 @@
+## [1.40.0](https://github.com/wmfs/gazetteer-blueprint/compare/v1.39.0...v1.40.0) (2025-10-21)
+
+### Build system dependencies :hammer:
+
+* **deps-dev:** update dependency @semantic-release/release-notes-generator to v14.1.0 ([#932](https://github.com/wmfs/gazetteer-blueprint/issues/932)) ([cf33f4b](https://github.com/wmfs/gazetteer-blueprint/commit/cf33f4b63dbc1196e1e71df4c29db674ef7579df))
+* **deps-dev:** update dependency @wmfs/tymly to v1.313.0 ([#923](https://github.com/wmfs/gazetteer-blueprint/issues/923)) ([bcea96e](https://github.com/wmfs/gazetteer-blueprint/commit/bcea96e8f6cde5989c60f936c900c809f79d244f))
+* **deps-dev:** update dependency @wmfs/tymly to v1.314.0 ([#926](https://github.com/wmfs/gazetteer-blueprint/issues/926)) ([2cc86c9](https://github.com/wmfs/gazetteer-blueprint/commit/2cc86c97904e5327e7913b34ec4e93a0469b6962))
+* **deps-dev:** update dependency @wmfs/tymly to v1.315.0 ([#929](https://github.com/wmfs/gazetteer-blueprint/issues/929)) ([84fef66](https://github.com/wmfs/gazetteer-blueprint/commit/84fef66a94791b77899864e50ebcbdf04f1510fb))
+* **deps-dev:** update dependency @wmfs/tymly-pg-plugin to v1.338.0 ([#921](https://github.com/wmfs/gazetteer-blueprint/issues/921)) ([2e9d11d](https://github.com/wmfs/gazetteer-blueprint/commit/2e9d11da74c4b5c11db95ad487a507c64c57945b))
+* **deps-dev:** update dependency @wmfs/tymly-pg-plugin to v1.339.0 ([#922](https://github.com/wmfs/gazetteer-blueprint/issues/922)) ([5eaa494](https://github.com/wmfs/gazetteer-blueprint/commit/5eaa4945ea5cc4aaaed1b420a708fbf40f2f5b47))
+* **deps-dev:** update dependency @wmfs/tymly-pg-plugin to v1.340.0 ([#924](https://github.com/wmfs/gazetteer-blueprint/issues/924)) ([3a2f8b3](https://github.com/wmfs/gazetteer-blueprint/commit/3a2f8b3f5f23f4a37dc3a8d42c2f3e4ae3abd7ba))
+* **deps-dev:** update dependency @wmfs/tymly-pg-plugin to v1.341.0 ([#927](https://github.com/wmfs/gazetteer-blueprint/issues/927)) ([08aacc4](https://github.com/wmfs/gazetteer-blueprint/commit/08aacc4648ae0e867e17eb39e725498241371e4d))
+* **deps-dev:** update dependency chai to v6 ([#930](https://github.com/wmfs/gazetteer-blueprint/issues/930)) ([b6af90a](https://github.com/wmfs/gazetteer-blueprint/commit/b6af90aad4e7ae2be45017b2e4e6fb8988fc69c1))
+* **deps-dev:** update dependency chai to v6.2.0 ([#935](https://github.com/wmfs/gazetteer-blueprint/issues/935)) ([460a741](https://github.com/wmfs/gazetteer-blueprint/commit/460a741a0a35d021e024f20cb6db3548479da020))
+* **deps-dev:** update dependency conventional-changelog-conventionalcommits to v9.1.0 ([#925](https://github.com/wmfs/gazetteer-blueprint/issues/925)) ([4362d5a](https://github.com/wmfs/gazetteer-blueprint/commit/4362d5a8fd50de8403f35e7ff58fd8cfb304a8ee))
+* **deps-dev:** update dependency mocha to v11.7.2 ([#931](https://github.com/wmfs/gazetteer-blueprint/issues/931)) ([54ce2dd](https://github.com/wmfs/gazetteer-blueprint/commit/54ce2dd335f4bda7397a12de61a4515005ff4d0d))
+* **deps-dev:** update dependency mocha to v11.7.3 ([#936](https://github.com/wmfs/gazetteer-blueprint/issues/936)) ([d087c8c](https://github.com/wmfs/gazetteer-blueprint/commit/d087c8c5dc3bc44ac947a420c51503d61e5aa0c4))
+* **deps-dev:** update dependency mocha to v11.7.4 ([#937](https://github.com/wmfs/gazetteer-blueprint/issues/937)) ([7d6c266](https://github.com/wmfs/gazetteer-blueprint/commit/7d6c2667ee23117ee3814d0f845320363dc568be))
+* **deps-dev:** update dependency semantic-release to v24.2.7 ([#928](https://github.com/wmfs/gazetteer-blueprint/issues/928)) ([20bfe2a](https://github.com/wmfs/gazetteer-blueprint/commit/20bfe2a5a2e94618bf3a31dc02dcc69ac6a23e43))
+* **deps-dev:** update dependency semantic-release to v24.2.8 ([#933](https://github.com/wmfs/gazetteer-blueprint/issues/933)) ([a80cb03](https://github.com/wmfs/gazetteer-blueprint/commit/a80cb035e287de8e4e9241f4a3690ae500c191f0))
+* **deps-dev:** update dependency semantic-release to v24.2.9 ([#934](https://github.com/wmfs/gazetteer-blueprint/issues/934)) ([b5073ae](https://github.com/wmfs/gazetteer-blueprint/commit/b5073ae219139b87db65ba7a6da73318a6532960))
+* **deps-dev:** update dependency semantic-release to v25 ([#938](https://github.com/wmfs/gazetteer-blueprint/issues/938)) ([fbc7ed1](https://github.com/wmfs/gazetteer-blueprint/commit/fbc7ed198191f1403cb72219733b806acccd0015))
+* **deps-dev:** update dependency semantic-release to v25.0.1 ([#939](https://github.com/wmfs/gazetteer-blueprint/issues/939)) ([624f23d](https://github.com/wmfs/gazetteer-blueprint/commit/624f23d370acdf7e7ea48ce02bb46b7725ee9519))
+* **deps:** revert chai to non-esm ([87b4331](https://github.com/wmfs/gazetteer-blueprint/commit/87b433166eb00c23fbed866ff3311c755145b71c))
+
 ## [1.39.0](https://github.com/wmfs/gazetteer-blueprint/compare/v1.38.0...v1.39.0) (2025-06-30)
 
 ### New Feature(s) :rocket:
