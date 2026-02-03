@@ -19,6 +19,9 @@
   "bugs": {
     "url": "https://github.com/wmfs/gazetteer-blueprint/issues"
   },
+  "dependencies": {
+    "lodash": "4.17.23"
+  },
   "devDependencies": {
     "@semantic-release/changelog": "6.0.3",
     "@semantic-release/release-notes-generator": "14.1.0",
