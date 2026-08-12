@@ -1,3 +1,5 @@
+## [1.41.1](https://github.com/wmfs/gazetteer-blueprint/compare/v1.41.0...v1.41.1) (2026-08-12)
+
 ## [1.41.0](https://github.com/wmfs/gazetteer-blueprint/compare/v1.40.0...v1.41.0) (2026-02-03)
 
 ### New Feature(s) :rocket:
