@@ -1,33 +1,5 @@
 {
   "extends": [
-    "config:base"
-  ],
-  "dependencyDashboard": true,
-  "enabledManagers": ["npm"],
-  "hostRules": [
-    {
-      "hostType": "npm",
-      "matchHost": "registry.npmjs.org",
-      "token": "{{ secrets.NPM }}"
-    }
-  ],
-  "packageRules": [
-    {
-      "matchDepTypes": ["devDependencies"],
-      "automerge": true,
-      "semanticCommitType": "build",
-      "semanticCommitScope": "deps-dev",
-      "labels": ["devDependencies"]
-    },
-    {
-      "matchDepTypes": ["dependencies"],
-      "semanticCommitType": "build",
-      "semanticCommitScope": "deps",
-      "labels": ["dependencies"],
-      "reviewers": ["team:tymly-reviewers"]
-    }
-  ],
-    "vulnerabilityAlerts": {
-    "labels": ["security"]
-  }
+    "github>wmfs/renovate-config"
+  ]
 }
