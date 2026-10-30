@@ -1,3 +1,26 @@
+## [1.42.0](https://github.com/wmfs/gazetteer-blueprint/compare/v1.41.1...v1.42.0) (2026-10-30)
+
+### Build system dependencies :hammer:
+
+* **deps-dev:** fix conventionalcommit versions [sc-34125] ([e4e32c8](https://github.com/wmfs/gazetteer-blueprint/commit/e4e32c89c7a36fe356fa2ef903600dd9ea85b63d))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs) packages ([#988](https://github.com/wmfs/gazetteer-blueprint/issues/988)) ([b7fe056](https://github.com/wmfs/gazetteer-blueprint/commit/b7fe056ffa813e89bd8aa63133aaf35ae87bc025))
+* **deps-dev:** update dependency @wmfs/tymly to v1.317.1 ([#976](https://github.com/wmfs/gazetteer-blueprint/issues/976)) ([4fad6a9](https://github.com/wmfs/gazetteer-blueprint/commit/4fad6a9a9b75ac3baa3da432ec54348f0ecca459))
+* **deps-dev:** update dependency @wmfs/tymly-etl-plugin to v1.189.1 ([#977](https://github.com/wmfs/gazetteer-blueprint/issues/977)) ([d8695a0](https://github.com/wmfs/gazetteer-blueprint/commit/d8695a01a76578e535e4be7ddb5b6f77a03f82b2))
+* **deps-dev:** update dependency @wmfs/tymly-pg-plugin to v1.348.1 ([#978](https://github.com/wmfs/gazetteer-blueprint/issues/978)) ([101cac1](https://github.com/wmfs/gazetteer-blueprint/commit/101cac197da0f7273adc9152fb4bb23ea73a9c7b))
+* **deps-dev:** update dependency @wmfs/tymly-test-helpers to v1.24.1 ([#979](https://github.com/wmfs/gazetteer-blueprint/issues/979)) ([626f5c6](https://github.com/wmfs/gazetteer-blueprint/commit/626f5c6dcde82905abb17e6e7173271f78b2ea9e))
+* **deps-dev:** update dependency conventional-changelog-conventionalcommits to v10.4.0 ([#980](https://github.com/wmfs/gazetteer-blueprint/issues/980)) ([1acda1a](https://github.com/wmfs/gazetteer-blueprint/commit/1acda1a16538de53270ad88efab02b0876393097))
+* **deps-dev:** update dependency conventional-changelog-conventionalcommits to v10.4.1 ([#985](https://github.com/wmfs/gazetteer-blueprint/issues/985)) ([8262fc2](https://github.com/wmfs/gazetteer-blueprint/commit/8262fc20e657fb2abf4fa5f71300f1a715d57287))
+* **deps-dev:** update dependency mocha to v12 ([#981](https://github.com/wmfs/gazetteer-blueprint/issues/981)) ([ad8de1b](https://github.com/wmfs/gazetteer-blueprint/commit/ad8de1bd347a2f12167523d6ebc6088abe290556))
+* **deps-dev:** update dependency mocha to v12.0.1 ([#982](https://github.com/wmfs/gazetteer-blueprint/issues/982)) ([47c8377](https://github.com/wmfs/gazetteer-blueprint/commit/47c8377df0e033993d1b32f08f77b172e399105c))
+* **deps-dev:** update dependency mocha to v12.0.2 ([#983](https://github.com/wmfs/gazetteer-blueprint/issues/983)) ([4129063](https://github.com/wmfs/gazetteer-blueprint/commit/4129063962ddac023d6befb3aba9f93c3070567a))
+* **deps-dev:** update dependency mocha to v12.0.3 ([#984](https://github.com/wmfs/gazetteer-blueprint/issues/984)) ([cc3d493](https://github.com/wmfs/gazetteer-blueprint/commit/cc3d4937afd010e1511df29c6b2ad1e0f16b8d05))
+* **deps:** update dependency lodash to v4.18.1 [security] ([#959](https://github.com/wmfs/gazetteer-blueprint/issues/959)) ([a4cd3d4](https://github.com/wmfs/gazetteer-blueprint/commit/a4cd3d46e71166222498cd31f77e4711fe8e1923))
+
+### CICD Configuration Changes :construction_worker:
+
+* use github-app-token orb for release token [sc-34101] ([#986](https://github.com/wmfs/gazetteer-blueprint/issues/986)) ([469798d](https://github.com/wmfs/gazetteer-blueprint/commit/469798d3cc57b106ad2f321b7f2bf82c5a2ef697))
+* use shared renovate preset [sc-34117] ([#987](https://github.com/wmfs/gazetteer-blueprint/issues/987)) ([315afd4](https://github.com/wmfs/gazetteer-blueprint/commit/315afd491e27fad20a26eca2c43d34275b7bca21))
+
 ## [1.41.1](https://github.com/wmfs/gazetteer-blueprint/compare/v1.41.0...v1.41.1) (2026-08-12)
 
 ## [1.41.0](https://github.com/wmfs/gazetteer-blueprint/compare/v1.40.0...v1.41.0) (2026-02-03)
