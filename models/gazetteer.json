@@ -275,6 +275,14 @@
       "title": "Data Source",
       "description": "Where this data has come from - Ordnance Survey, legacy, etc"
     },
+    "removedFromSupplyAt": {
+      "typeHint": "dateTime",
+      "type": "string",
+      "format": "date-time",
+      "title": "Removed from supply",
+      "description": "When a refresh found this Ordnance Survey record missing from the AddressBase supply and kept it instead of deleting it. Null while it is in the current supply.",
+      "audit": "raw"
+    },
     "maskingNumber": {
       "type": "string",
       "title": "Masking Number",

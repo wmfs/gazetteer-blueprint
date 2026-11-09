@@ -36,7 +36,8 @@ function addressbasePremiumToGazetteer (ctx) {
       addressDescription: sourceRow.uprn,
       wardCode: sourceRow.wardCode,
       dataSource: 'OrdnanceSurvey',
-      lpiStatus: sourceRow.lpiStatus
+      lpiStatus: sourceRow.lpiStatus,
+      removedFromSupplyAt: null // back in the supply, so clear any soft delete from an earlier refresh
       // todo: masking number?
     }
 
