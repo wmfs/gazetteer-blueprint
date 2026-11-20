@@ -1,0 +1,12 @@
+{
+  "description": "Street-type abbreviations used in addresses, so searching either form finds both",
+  "synonyms": [
+    ["st", "street"],
+    ["rd", "road"],
+    ["ave", "avenue"],
+    ["ln", "lane"],
+    ["cres", "crescent"],
+    ["dr", "drive"],
+    ["ct", "court"]
+  ]
+}
