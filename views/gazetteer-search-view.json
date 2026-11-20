@@ -1,0 +1,68 @@
+{
+  "title": "Gazetteer - Search",
+  "description": "One row per UPRN for searching: the best valid address row, plus the property's other addresses and aliases. Excludes properties whose rows are all marked invalid and local records merged into another UPRN. Created by pg-scripts/create-view.sql.",
+  "type": "object",
+  "properties": {
+    "uprn": {
+      "type": "integer",
+      "title": "UPRN"
+    },
+    "counter": {
+      "type": "integer",
+      "description": "Counter of the chosen address row"
+    },
+    "addressLabel": {
+      "type": "string",
+      "title": "Address"
+    },
+    "maskingNumber": {
+      "type": "string",
+      "title": "Masking Number"
+    },
+    "class": {
+      "type": "string",
+      "title": "Classification"
+    },
+    "generalDescription": {
+      "type": "string"
+    },
+    "smallIcon": {
+      "type": "string"
+    },
+    "postcode": {
+      "type": "string"
+    },
+    "latitude": {
+      "type": "number"
+    },
+    "longitude": {
+      "type": "number"
+    },
+    "actualX": {
+      "type": "integer"
+    },
+    "actualY": {
+      "type": "integer"
+    },
+    "lpiStatus": {
+      "type": "integer",
+      "description": "LPI Logical Status of the chosen row, 1: Approved, 3: Alternative, 6: Provisional, 8: Historical"
+    },
+    "otherAddressLabels": {
+      "type": "string",
+      "description": "The property's other valid addresses, separated by '; '"
+    },
+    "aliases": {
+      "type": "string",
+      "description": "The property's aliases, separated by '; '"
+    },
+    "allInvalid": {
+      "type": "boolean",
+      "description": "Every address row is marked invalid"
+    },
+    "merged": {
+      "type": "boolean",
+      "description": "A local record merged into another UPRN (active accepted match)"
+    }
+  }
+}
