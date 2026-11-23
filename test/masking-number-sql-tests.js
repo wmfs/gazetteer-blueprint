@@ -115,40 +115,40 @@ describe('masking number and search terms SQL functions', function () {
       `)
     })
 
-    const terms = (uprn, postcode) => one('select wmfs.search_terms($1, $2) as v', [uprn, postcode])
+    const terms = uprn => one('select wmfs.search_terms($1) as v', [uprn])
 
-    it('the UPRN, its masking number, and the postcode with and without its space', async () => {
-      expect(await terms(100070567650, 'B6 6NU')).to.have.members(['100070567650', '7M36CJNX', 'B6 6NU', 'B66NU'])
+    it('the UPRN, its masking number, and its postcode with and without its space', async () => {
+      expect(await terms(100070567650)).to.have.members(['100070567650', '7M36CJNX', 'B6 6NU', 'B66NU'])
     })
 
-    it('looks up the postcode from the approved gazetteer row when none is given', async () => {
-      expect(await terms(100070567650, null)).to.have.members(['100070567650', '7M36CJNX', 'B6 6NU', 'B66NU'])
-      expect(await terms(100070567650, '  ')).to.include('B66NU')
-    })
-
-    it('tidies the postcode it is given', async () => {
-      expect(await terms(100070567650, ' ws9  0td ')).to.include.members(['WS9 0TD', 'WS90TD'])
+    it('takes the postcode from the best gazetteer row, tidied', async () => {
+      // the approved row (' b6  6nu ') wins over the historical one ('B6 6XX')
+      expect(await terms(100070567650)).to.not.include('B66XX')
     })
 
     it('includes the UPRNs matched to it, and their masking numbers', async () => {
-      const official = await terms(3455013637, null)
+      const official = await terms(3455013637)
       expect(official).to.include.members(['3455013637', '40006', '40008', 'B66 2QT', 'B662QT'])
       expect(official).to.include(await one('select wmfs.uprn_to_mask(40006) as v'))
       expect(official, 'inactive match').to.not.include('40009')
+    })
 
-      const local = await terms(40006, null)
-      expect(local, 'local UPRN finds the official one and the other local one').to.include.members(['40006', '3455013637', '40008'])
+    it('a local UPRN with no postcode gets the postcode of the official UPRN it is matched to', async () => {
+      expect(await terms(40006)).to.include.members(['40006', '3455013637', '40008', 'B66 2QT', 'B662QT'])
+    })
+
+    it('a UPRN not in the gazetteer still gets its UPRN and masking number', async () => {
+      expect(await terms(99999)).to.have.members(['99999', await one('select wmfs.uprn_to_mask(99999) as v')])
     })
 
     it('never returns NULL', async () => {
-      expect(await terms(null, null)).to.eql([])
-      expect(await terms(0, null)).to.eql([])
-      expect(await terms(null, 'B6 6NU')).to.have.members(['B6 6NU', 'B66NU'])
-      expect(await terms(99999, null)).to.have.members(['99999', await one('select wmfs.uprn_to_mask(99999) as v')])
+      expect(await terms(null)).to.eql([])
+      expect(await terms(0)).to.eql([])
+      expect(await terms(-1)).to.eql([])
     })
 
     it('can be joined to other terms with ||', async () => {
-      const joined = await one("select (NULL::text[] || wmfs.search_terms(NULL, NULL)) || ARRAY['x'] as v")
+      const joined = await one("select (NULL::text[] || wmfs.search_terms(NULL)) || ARRAY['x'] as v")
       expect(joined).to.eql(['x'])
     })
   })

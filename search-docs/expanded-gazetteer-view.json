@@ -7,7 +7,7 @@
     "docType": "'wmfs_gazetteer'::text",
     "title": "coalesce(address_label, uprn::text)",
     "description": "uprn::text || coalesce(' (' || wmfs.uprn_to_mask(uprn) || ')', '')",
-    "additionalTerms": "wmfs.search_terms(uprn::bigint, postcode::text)",
+    "additionalTerms": "wmfs.search_terms(uprn::bigint)",
     "category": "'gazetteer'::text",
     "eventTimestamp": "NULL::timestamp with time zone",
     "point": "latitude::text || ',' || longitude::text",

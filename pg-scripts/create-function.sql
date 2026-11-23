@@ -52,44 +52,48 @@ $$;
 
 -- Hidden search keys for a record held against a property, for a search doc's additionalTerms:
 --   the UPRN and the UPRNs matched to it (the same property), their masking numbers,
---   and the postcode with and without its space.
--- If no postcode is given, the property's postcode is looked up in the gazetteer.
+--   and the property's postcode with and without its space, from the gazetteer.
+-- The postcode is always taken from wmfs.gazetteer, so it's only stored in one place.
 -- Never returns NULL, so it can be joined to other terms with ||. e.g.
---   wmfs.search_terms(100070567650, 'B6 6NU') -> {100070567650,7M36CJNX,B6 6NU,B66NU}
-CREATE OR REPLACE FUNCTION wmfs.search_terms(p_uprn bigint, p_postcode text DEFAULT NULL)
+--   wmfs.search_terms(100070567650) -> {100070567650,7M36CJNX,B6 6NU,B66NU}
+DROP FUNCTION IF EXISTS wmfs.search_terms(bigint, text);
+
+CREATE OR REPLACE FUNCTION wmfs.search_terms(p_uprn bigint)
   RETURNS text[]
   LANGUAGE plpgsql STABLE PARALLEL SAFE AS
 $$
 DECLARE
   v_uprns bigint[] := '{}';
-  v_postcode text := upper(regexp_replace(btrim(p_postcode), '\s+', ' ', 'g'));
   v_terms text[] := '{}';
   u bigint;
 BEGIN
-  IF p_uprn > 0 THEN
-    SELECT coalesce(array_agg(DISTINCT m::bigint), '{}') INTO v_uprns
-      FROM unnest(string_to_array(conflict_resolution.find_related_uprns(p_uprn), ',')) AS m;
-    IF NOT p_uprn = ANY(v_uprns) THEN
-      v_uprns := p_uprn || v_uprns;
-    END IF;
+  IF p_uprn IS NULL OR p_uprn <= 0 THEN
+    RETURN v_terms;
+  END IF;
 
-    IF coalesce(v_postcode, '') = '' THEN
-      SELECT upper(regexp_replace(btrim(g.postcode), '\s+', ' ', 'g')) INTO v_postcode
-        FROM wmfs.gazetteer g
-       WHERE g.uprn = p_uprn
-         AND coalesce(btrim(g.postcode), '') <> ''
-       ORDER BY CASE g.lpi_status WHEN 1 THEN 1 WHEN 3 THEN 2 WHEN 6 THEN 3 WHEN 8 THEN 4 ELSE 5 END, g.counter
-       LIMIT 1;
-    END IF;
+  SELECT coalesce(array_agg(DISTINCT m::bigint), '{}') INTO v_uprns
+    FROM unnest(string_to_array(conflict_resolution.find_related_uprns(p_uprn), ',')) AS m;
+  IF NOT p_uprn = ANY(v_uprns) THEN
+    v_uprns := p_uprn || v_uprns;
   END IF;
 
   FOREACH u IN ARRAY v_uprns LOOP
     v_terms := v_terms || u::text || wmfs.uprn_to_mask(u);
   END LOOP;
 
-  IF coalesce(v_postcode, '') <> '' THEN
-    v_terms := v_terms || v_postcode || replace(v_postcode, ' ', '');
-  END IF;
+  -- each UPRN's postcode from its best gazetteer row (approved, then alternative, provisional, historical),
+  -- so a local UPRN with no postcode still gets the postcode of the official UPRN it's matched to
+  v_terms := v_terms || ARRAY(
+    SELECT v.term
+      FROM (
+        SELECT DISTINCT ON (g.uprn) upper(regexp_replace(btrim(g.postcode), '\s+', ' ', 'g')) AS postcode
+          FROM wmfs.gazetteer g
+         WHERE g.uprn = ANY(v_uprns)
+           AND coalesce(btrim(g.postcode), '') <> ''
+         ORDER BY g.uprn, CASE g.lpi_status WHEN 1 THEN 1 WHEN 3 THEN 2 WHEN 6 THEN 3 WHEN 8 THEN 4 ELSE 5 END, g.counter
+      ) x,
+      LATERAL (VALUES (x.postcode), (replace(x.postcode, ' ', ''))) AS v(term)
+  );
 
   RETURN ARRAY(SELECT DISTINCT t FROM unnest(v_terms) AS t WHERE coalesce(t, '') <> '' ORDER BY t);
 END;
