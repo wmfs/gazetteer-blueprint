@@ -27,6 +27,9 @@ describe('masking number and search terms SQL functions', function () {
     await client.connect()
     await client.query('BEGIN')
     await client.query('CREATE SCHEMA IF NOT EXISTS wmfs')
+    // wmfs.search_terms is plain SQL, so Postgres checks the tables it reads exist when it's created.
+    // They're only created further down (and only if they don't exist already), so skip that check here.
+    await client.query('SET LOCAL check_function_bodies = false')
     await client.query(FUNCTIONS_SQL)
   })
 

@@ -58,43 +58,36 @@ $$;
 --   wmfs.search_terms(100070567650) -> {100070567650,7M36CJNX,B6 6NU,B66NU}
 DROP FUNCTION IF EXISTS wmfs.search_terms(bigint, text);
 
+-- One SQL query rather than PL/pgSQL steps, and matched UPRNs are only looked up for UPRNs that have a match:
+-- it runs for every gazetteer row in a full import, so it needs to be fast.
+-- Needs the indexes on conflict_resolution.accepted_matches (local_uprn, official_uprn).
 CREATE OR REPLACE FUNCTION wmfs.search_terms(p_uprn bigint)
   RETURNS text[]
-  LANGUAGE plpgsql STABLE PARALLEL SAFE AS
+  LANGUAGE sql STABLE PARALLEL SAFE AS
 $$
-DECLARE
-  v_uprns bigint[] := '{}';
-  v_terms text[] := '{}';
-  u bigint;
-BEGIN
-  IF p_uprn IS NULL OR p_uprn <= 0 THEN
-    RETURN v_terms;
-  END IF;
-
-  SELECT coalesce(array_agg(DISTINCT m::bigint), '{}') INTO v_uprns
-    FROM unnest(string_to_array(conflict_resolution.find_related_uprns(p_uprn), ',')) AS m;
-  IF NOT p_uprn = ANY(v_uprns) THEN
-    v_uprns := p_uprn || v_uprns;
-  END IF;
-
-  FOREACH u IN ARRAY v_uprns LOOP
-    v_terms := v_terms || u::text || wmfs.uprn_to_mask(u);
-  END LOOP;
-
+  WITH uprns AS (
+    SELECT p_uprn AS uprn WHERE p_uprn > 0
+    UNION
+    SELECT m::bigint
+      FROM unnest(string_to_array(conflict_resolution.find_related_uprns(p_uprn), ',')) AS m
+     WHERE p_uprn > 0
+       AND EXISTS (SELECT 1 FROM conflict_resolution.accepted_matches a
+                    WHERE (a.local_uprn = p_uprn OR a.official_uprn = p_uprn) AND a.is_active)
+  ),
   -- each UPRN's postcode from its best gazetteer row (approved, then alternative, provisional, historical),
   -- so a local UPRN with no postcode still gets the postcode of the official UPRN it's matched to
-  v_terms := v_terms || ARRAY(
-    SELECT v.term
-      FROM (
-        SELECT DISTINCT ON (g.uprn) upper(regexp_replace(btrim(g.postcode), '\s+', ' ', 'g')) AS postcode
-          FROM wmfs.gazetteer g
-         WHERE g.uprn = ANY(v_uprns)
-           AND coalesce(btrim(g.postcode), '') <> ''
-         ORDER BY g.uprn, CASE g.lpi_status WHEN 1 THEN 1 WHEN 3 THEN 2 WHEN 6 THEN 3 WHEN 8 THEN 4 ELSE 5 END, g.counter
-      ) x,
-      LATERAL (VALUES (x.postcode), (replace(x.postcode, ' ', ''))) AS v(term)
-  );
-
-  RETURN ARRAY(SELECT DISTINCT t FROM unnest(v_terms) AS t WHERE coalesce(t, '') <> '' ORDER BY t);
-END;
+  postcodes AS (
+    SELECT DISTINCT ON (g.uprn) upper(regexp_replace(btrim(g.postcode), '\s+', ' ', 'g')) AS postcode
+      FROM wmfs.gazetteer g
+      JOIN uprns u ON u.uprn = g.uprn
+     WHERE coalesce(btrim(g.postcode), '') <> ''
+     ORDER BY g.uprn, CASE g.lpi_status WHEN 1 THEN 1 WHEN 3 THEN 2 WHEN 6 THEN 3 WHEN 8 THEN 4 ELSE 5 END, g.counter
+  )
+  SELECT coalesce(array_agg(DISTINCT t ORDER BY t) FILTER (WHERE coalesce(t, '') <> ''), '{}')
+    FROM (
+      SELECT uprn::text AS t FROM uprns
+      UNION ALL SELECT wmfs.uprn_to_mask(uprn) FROM uprns
+      UNION ALL SELECT postcode FROM postcodes
+      UNION ALL SELECT replace(postcode, ' ', '') FROM postcodes
+    ) terms
 $$;
