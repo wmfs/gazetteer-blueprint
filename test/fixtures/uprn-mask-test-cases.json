@@ -1,0 +1,204 @@
+{
+  "description": "Shared test cases for every masking number implementation (this package and the wmfs.uprn_to_mask / wmfs.mask_to_uprn SQL functions). Expected null means invalid input.",
+  "valid": [
+    {
+      "uprn": "100070587119",
+      "mask": "7M36D90J"
+    },
+    {
+      "uprn": "100120581570",
+      "mask": "7M4THYBQ"
+    },
+    {
+      "uprn": "100031621765",
+      "mask": "7M1Q7ZZM"
+    },
+    {
+      "uprn": "100070438189",
+      "mask": "7M36891D"
+    },
+    {
+      "uprn": "100070661270",
+      "mask": "7M36FW5X"
+    },
+    {
+      "uprn": "100070377892",
+      "mask": "7M36689B"
+    },
+    {
+      "uprn": "100070529272",
+      "mask": "7M36BZPX"
+    },
+    {
+      "uprn": "100032225798",
+      "mask": "7M1QRXRK"
+    },
+    {
+      "uprn": "100031626162",
+      "mask": "7M1Q7YSH"
+    },
+    {
+      "uprn": "100032225166",
+      "mask": "7M1QRX78"
+    },
+    {
+      "uprn": "100071397718",
+      "mask": "7M379FFV"
+    },
+    {
+      "uprn": "10024333046",
+      "mask": "4DJT71Y9"
+    },
+    {
+      "uprn": "10090434308",
+      "mask": "4DM7WR92"
+    },
+    {
+      "uprn": "100071065698",
+      "mask": "7M36TB0K"
+    },
+    {
+      "uprn": "100071279199",
+      "mask": "7M375G5W"
+    },
+    {
+      "uprn": "100071411459",
+      "mask": "7M379TP7"
+    },
+    {
+      "uprn": "100032229821",
+      "mask": "7M1QRN2D"
+    },
+    {
+      "uprn": "100070997155",
+      "mask": "7M36R1LX"
+    },
+    {
+      "uprn": "10003691644",
+      "mask": "4DJ6R5BJ"
+    },
+    {
+      "uprn": "100031688993",
+      "mask": "7M1Q9X9B"
+    }
+  ],
+  "encode": [
+    {
+      "input": null,
+      "expected": null,
+      "why": "missing UPRN"
+    },
+    {
+      "input": "",
+      "expected": null,
+      "why": "empty"
+    },
+    {
+      "input": 0,
+      "expected": null,
+      "why": "zero"
+    },
+    {
+      "input": -1,
+      "expected": null,
+      "why": "negative"
+    },
+    {
+      "input": "abc",
+      "expected": null,
+      "why": "not a number"
+    },
+    {
+      "input": "12.5",
+      "expected": null,
+      "why": "not a whole number"
+    },
+    {
+      "input": "1000000000000",
+      "expected": null,
+      "why": "more than 12 digits"
+    },
+    {
+      "input": " 100070567650 ",
+      "expected": "7M36CJNX",
+      "why": "spaces around it"
+    },
+    {
+      "input": 100070567650,
+      "expected": "7M36CJNX",
+      "why": "number, not text"
+    },
+    {
+      "input": "999999999999",
+      "expected": "19D3753V8",
+      "why": "largest UPRN"
+    },
+    {
+      "input": 1,
+      "expected": "42ZWNCK6",
+      "why": "smallest UPRN"
+    }
+  ],
+  "decode": [
+    {
+      "input": "7m36cjnx",
+      "expected": "100070567650",
+      "why": "lower case"
+    },
+    {
+      "input": "7M36 CJNX",
+      "expected": "100070567650",
+      "why": "read out in two halves"
+    },
+    {
+      "input": "7M36-CJNX",
+      "expected": "100070567650",
+      "why": "hyphen"
+    },
+    {
+      "input": " 7M36CJNX ",
+      "expected": "100070567650",
+      "why": "spaces around it"
+    },
+    {
+      "input": "7M36D9OJ",
+      "expected": "100070587119",
+      "why": "letter O typed for zero"
+    },
+    {
+      "input": "7M1Q7ZZM",
+      "expected": "100031621765",
+      "why": "Z (a swapped vowel)"
+    },
+    {
+      "input": "7M36CJN",
+      "expected": null,
+      "why": "missing a character"
+    },
+    {
+      "input": "7M36CJNA",
+      "expected": null,
+      "why": "contains a vowel"
+    },
+    {
+      "input": "7M36CJN!",
+      "expected": null,
+      "why": "punctuation"
+    },
+    {
+      "input": "ZZZZZZZZZ",
+      "expected": null,
+      "why": "more than 12 digits when decoded"
+    },
+    {
+      "input": "",
+      "expected": null,
+      "why": "empty"
+    },
+    {
+      "input": null,
+      "expected": null,
+      "why": "missing"
+    }
+  ]
+}

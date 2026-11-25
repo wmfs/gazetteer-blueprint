@@ -6,7 +6,9 @@ const path = require('path')
 const { Client } = require('pg')
 const expect = require('chai').expect
 // The same cases the JavaScript encoder is tested with, so the two can't drift apart
-const cases = require('@wmfs/uprn-encode-decode/lib/test-cases.json')
+// A copy of @wmfs/uprn-encode-decode's lib/test-cases.json, so the SQL and JavaScript encoders are checked
+// against the same cases. Switch back to requiring it from the package once that version is published.
+const cases = require('./fixtures/uprn-mask-test-cases.json')
 
 const FUNCTIONS_SQL = fs.readFileSync(path.resolve(__dirname, '../pg-scripts/create-function.sql'), 'utf8')
 
