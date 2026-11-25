@@ -3,11 +3,11 @@
   "stopwords": ["limited", "ltd", "plc", "llp"],
   "boostPatterns": [
     {
-      "description": "A UK postcode, with or without its space (e.g. WS9 0TD or WS90TD), boosted against the postcode stored without a space",
+      "description": "A UK postcode, with or without its space (e.g. WS9 0TD or WS90TD), boosted against the postcode stored without a space. 30 is added to the score of every record with that postcode, worth more than a word or two of the address",
       "pattern": "\\b(?:GIR ?0AA|[A-Z]{1,2}[0-9][A-Z0-9]? ?[0-9][A-Z]{2})\\b",
       "flags": "i",
       "field": "additionalTerms",
-      "boost": 5,
+      "boost": 30,
       "removeSpaces": true
     }
   ]
