@@ -109,37 +109,37 @@ describe('masking number and search terms SQL functions', function () {
           ) x;
         $f$;
         INSERT INTO wmfs.gazetteer VALUES
-          (100070567650, 1, 8, 'B6 6XX'),
-          (100070567650, 2, 1, ' b6  6nu '),
-          (3455013637, 1, 1, 'B66 2QT'),
-          (40006, 1, 6, NULL);
+          (90012345678, 1, 8, 'ZZ6 6XX'),
+          (90012345678, 2, 1, ' zz6  6nu '),
+          (90023456789, 1, 1, 'ZZ66 2QT'),
+          (99006, 1, 6, NULL);
         INSERT INTO conflict_resolution.accepted_matches VALUES
-          (40006, 3455013637, true),
-          (40008, 3455013637, true),
-          (40009, 3455013637, false);
+          (99006, 90023456789, true),
+          (99008, 90023456789, true),
+          (99009, 90023456789, false);
       `)
     })
 
     const terms = uprn => one('select wmfs.search_terms($1) as v', [uprn])
 
     it('the UPRN, its masking number, and its postcode with and without its space', async () => {
-      expect(await terms(100070567650)).to.have.members(['100070567650', '7M36CJNX', 'B6 6NU', 'B66NU'])
+      expect(await terms(90012345678)).to.have.members(['90012345678', '7ZNR7DM9', 'ZZ6 6NU', 'ZZ66NU'])
     })
 
     it('takes the postcode from the best gazetteer row, tidied', async () => {
-      // the approved row (' b6  6nu ') wins over the historical one ('B6 6XX')
-      expect(await terms(100070567650)).to.not.include('B66XX')
+      // the approved row (' zz6  6nu ') wins over the historical one ('ZZ6 6XX')
+      expect(await terms(90012345678)).to.not.include('ZZ66XX')
     })
 
     it('includes the UPRNs matched to it, and their masking numbers', async () => {
-      const official = await terms(3455013637)
-      expect(official).to.include.members(['3455013637', '40006', '40008', 'B66 2QT', 'B662QT'])
-      expect(official).to.include(await one('select wmfs.uprn_to_mask(40006) as v'))
-      expect(official, 'inactive match').to.not.include('40009')
+      const official = await terms(90023456789)
+      expect(official).to.include.members(['90023456789', '99006', '99008', 'ZZ66 2QT', 'ZZ662QT'])
+      expect(official).to.include(await one('select wmfs.uprn_to_mask(99006) as v'))
+      expect(official, 'inactive match').to.not.include('99009')
     })
 
     it('a local UPRN with no postcode gets the postcode of the official UPRN it is matched to', async () => {
-      expect(await terms(40006)).to.include.members(['40006', '3455013637', '40008', 'B66 2QT', 'B662QT'])
+      expect(await terms(99006)).to.include.members(['99006', '90023456789', '99008', 'ZZ66 2QT', 'ZZ662QT'])
     })
 
     it('a UPRN not in the gazetteer still gets its UPRN and masking number', async () => {
