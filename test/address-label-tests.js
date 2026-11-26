@@ -95,6 +95,66 @@ describe('address label tests', () => {
         postCode: 'TF6 5BW'
       },
       'Coppice House, Dog In Lane, Huntingdon, Little Wenlock, Telford, TF6 5BW'
+    ],
+    [
+      'area name 2 the same as the post town is only shown once',
+      {
+        businessName: 'ACORN VIEW CARE HOME',
+        buildingName: null,
+        buildingNumber: null,
+        streetName1: 'EXAMPLE ROAD',
+        streetName2: null,
+        areaName1: 'NETHERTON',
+        areaName2: 'DUDLEY',
+        postTown: 'DUDLEY',
+        postCode: 'ZZ1 1AA'
+      },
+      'Acorn View Care Home, Example Road, Netherton, Dudley, ZZ1 1AA'
+    ],
+    [
+      'area name 2 the same as the post town, without area name 1',
+      {
+        businessName: 'MAPLE LODGE',
+        buildingName: null,
+        buildingNumber: '12',
+        streetName1: 'SAMPLE AVENUE',
+        streetName2: null,
+        areaName1: null,
+        areaName2: 'WOLVERHAMPTON',
+        postTown: 'WOLVERHAMPTON',
+        postCode: 'ZZ2 1AA'
+      },
+      'Maple Lodge, 12 Sample Avenue, Exampleton, ZZ2 1AA'
+    ],
+    [
+      'repeated town in a different case or spacing is only shown once',
+      {
+        businessName: 'CORNER CAFE',
+        buildingName: null,
+        buildingNumber: '3',
+        streetName1: 'TEST STREET',
+        streetName2: null,
+        areaName1: null,
+        areaName2: 'Smethwick ',
+        postTown: 'SMETHWICK',
+        postCode: 'ZZ3 1AA'
+      },
+      'Corner Cafe, 3 Test Street, Smethwick, ZZ3 1AA'
+    ],
+    [
+      'area name 1 the same as the post town is only shown once',
+      {
+        businessName: null,
+        buildingName: null,
+        buildingNumber: '7',
+        streetName1: 'FICTIONAL LANE',
+        streetName2: null,
+        areaName1: 'SANDBACH',
+        areaName2: null,
+        postTown: 'SANDBACH',
+        postCode: 'ZZ4 1AA'
+      },
+      '7 Fictional Lane, Sandbach, ZZ4 1AA'
     ]
   ]
 
