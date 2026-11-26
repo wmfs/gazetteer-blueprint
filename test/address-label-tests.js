@@ -107,9 +107,9 @@ describe('address label tests', () => {
         areaName1: 'NETHERTON',
         areaName2: 'DUDLEY',
         postTown: 'DUDLEY',
-        postCode: 'DY1 1AA'
+        postCode: 'ZZ1 1AA'
       },
-      'Acorn View Care Home, Example Road, Netherton, Dudley, DY1 1AA'
+      'Acorn View Care Home, Example Road, Netherton, Dudley, ZZ1 1AA'
     ],
     [
       'area name 2 the same as the post town, without area name 1',
@@ -122,9 +122,9 @@ describe('address label tests', () => {
         areaName1: null,
         areaName2: 'WOLVERHAMPTON',
         postTown: 'WOLVERHAMPTON',
-        postCode: 'WV1 1AA'
+        postCode: 'ZZ2 1AA'
       },
-      'Maple Lodge, 12 Sample Avenue, Wolverhampton, WV1 1AA'
+      'Maple Lodge, 12 Sample Avenue, Exampleton, ZZ2 1AA'
     ],
     [
       'repeated town in a different case or spacing is only shown once',
@@ -137,9 +137,9 @@ describe('address label tests', () => {
         areaName1: null,
         areaName2: 'Smethwick ',
         postTown: 'SMETHWICK',
-        postCode: 'B66 1AA'
+        postCode: 'ZZ3 1AA'
       },
-      'Corner Cafe, 3 Test Street, Smethwick, B66 1AA'
+      'Corner Cafe, 3 Test Street, Smethwick, ZZ3 1AA'
     ],
     [
       'area name 1 the same as the post town is only shown once',
@@ -152,9 +152,9 @@ describe('address label tests', () => {
         areaName1: 'SANDBACH',
         areaName2: null,
         postTown: 'SANDBACH',
-        postCode: 'CW11 1AA'
+        postCode: 'ZZ4 1AA'
       },
-      '7 Fictional Lane, Sandbach, CW11 1AA'
+      '7 Fictional Lane, Sandbach, ZZ4 1AA'
     ]
   ]
 
