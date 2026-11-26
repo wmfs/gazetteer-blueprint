@@ -10,5 +10,14 @@
       "boost": 30,
       "removeSpaces": true
     }
+  ],
+  "prefixPatterns": [
+    {
+      "description": "A partial UK postcode: the area, a space, then the start of the second part (e.g. B75 7L), searched as postcodes starting with it",
+      "pattern": "\\b[A-Z]{1,2}[0-9][A-Z0-9]? [0-9][A-Z]{0,2}\\b",
+      "flags": "i",
+      "field": "searchKeys",
+      "removeSpaces": true
+    }
   ]
 }
