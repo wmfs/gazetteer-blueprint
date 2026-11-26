@@ -48,6 +48,10 @@
       "type": "integer",
       "description": "LPI Logical Status of the chosen row, 1: Approved, 3: Alternative, 6: Provisional, 8: Historical"
     },
+    "dataSource": {
+      "type": "string",
+      "description": "Where the address came from: OrdnanceSurvey (official) or a local source"
+    },
     "otherAddressLabels": {
       "type": "string",
       "description": "The property's other valid addresses, separated by '; '"

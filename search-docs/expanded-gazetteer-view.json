@@ -22,7 +22,7 @@
     "rating": "NULL::numeric",
     "data": "NULL::text",
     "roles": "'{\"$everyone\"}'::text[]",
-    "tags": "array_remove(ARRAY[case lpi_status when 1 then 'Approved' when 3 then 'Alternative' when 6 then 'Provisional' when 8 then 'Historical' end], NULL)::text[]",
+    "tags": "array_remove(ARRAY[case lpi_status when 1 then 'Approved' when 3 then 'Alternative' when 6 then 'Provisional' when 8 then 'Historical' end, case when data_source = 'OrdnanceSurvey' then 'Official' end], NULL)::text[]",
     "language": "'ENG'::text",
     "rootAncestorId": "NULL::text",
     "sortString": "uprn::text",

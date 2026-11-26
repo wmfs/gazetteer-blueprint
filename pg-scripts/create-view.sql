@@ -89,6 +89,7 @@ CREATE VIEW wmfs.gazetteer_search_view_all AS
           chosen.actual_x,
           chosen.actual_y,
           chosen.lpi_status,
+          chosen.data_source,
           others.other_address_labels,
           others.aliases,
           others.all_invalid,
