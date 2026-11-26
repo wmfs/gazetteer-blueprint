@@ -1,6 +1,6 @@
 -- Masking numbers.
 -- A masking number is the UPRN plus 112134617170, written in base 31 with the vowels swapped
--- for consonants (a>z, e>y, i>x, o>w, u>v), e.g. 100070567650 -> 7M36CJNX.
+-- for consonants (a>z, e>y, i>x, o>w, u>v), e.g. 90012345678 -> 7ZNR7DM9.
 -- These must give the same results as @wmfs/uprn-encode-decode: test/masking-number-sql-tests.js
 -- runs that package's shared test cases (lib/test-cases.json) against them.
 
@@ -55,7 +55,7 @@ $$;
 --   and the property's postcode with and without its space, from the gazetteer.
 -- The postcode is always taken from wmfs.gazetteer, so it's only stored in one place.
 -- Never returns NULL, so it can be joined to other terms with ||. e.g.
---   wmfs.search_terms(100070567650) -> {100070567650,7M36CJNX,B6 6NU,B66NU}
+--   wmfs.search_terms(90012345678) -> {90012345678,7ZNR7DM9,ZZ6 6NU,ZZ66NU}
 DROP FUNCTION IF EXISTS wmfs.search_terms(bigint, text);
 
 -- One SQL query rather than PL/pgSQL steps, and matched UPRNs are only looked up for UPRNs that have a match:
