@@ -26,7 +26,7 @@
     "language": "'ENG'::text",
     "rootAncestorId": "NULL::text",
     "sortString": "uprn::text",
-    "launches": "'{\"launches\":[{\"input\": {\"boardKeys\": {\"uprn\": '||uprn||'}}, \"stateMachineName\": \"wmfs_viewProperty_1_0\", \"title\": \"View Property Card\"}]}'::text",
+    "launches": "'{\"launches\":[{\"input\": {\"boardKeys\": {\"uprn\": '||uprn||'}}, \"stateMachineName\": \"wmfs_viewProperty_1_0\", \"title\": \"View\"}]}'::text",
     "created": "_created::timestamp with time zone",
     "modified": "_modified::timestamp with time zone"
   }
